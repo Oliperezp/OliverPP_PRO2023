@@ -37,6 +37,6 @@ Desarrolle un algoritmo que permita leer dos valores distintos, determinar cual 
   ---
 
 <div align="center">
-<img src="https://github.com/Oliperezp/Programacion/blob/main/Unidad-1/Images/diagrama1.png?raw=true"/>
+<img src="Images/diagrama1.png"/>
 </div>
   
