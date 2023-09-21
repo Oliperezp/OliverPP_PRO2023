@@ -8,6 +8,7 @@
 
 - [Ejercicio 1](#ejercicio1)
 - [Ejercicio 2](#ejercicio2)
+- [Ejercicio 3](#ejercicio3)
 
 ## Ejercicio 1<a name="ejercicio1"></a>
 
@@ -83,3 +84,34 @@ Pasos:
 <img src="Images/diagrama%20de%20flujo%202.drawio.png"/>
 </div>
   
+
+# Ejercicio 3<a name="ejercicio3"></a>
+
+
+Desarrolle un algoritmo que realice la sumatoria de los números enteros comprendidos entre el 1 y el 10,
+es decir, 1 + 2 + 3 + .... + 10.
+
+---
+
+### Pseudocódigo
+
+Pasos:
+
+- Inicio
+- Declaración de variables:
+- Asignación Contador :
+- Asignación Acumulador:
+- Si N = 10 Entonces
+- Escribir Suma
+- De lo contrario, Repetir desde el
+- Fin_Si
+- Fin
+
+</dir>
+
+### Diagrama de Flujo 2
+  ---
+
+  <div align="center">
+  <img src="Images/diagrama_de_flujo_3.drawio.png"/>
+  </div>
