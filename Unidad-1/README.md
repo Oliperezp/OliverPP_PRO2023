@@ -109,7 +109,7 @@ Pasos:
 
 </dir>
 
-### Diagrama de Flujo 2
+### Diagrama de Flujo 3
   ---
 
   <div align="center">
