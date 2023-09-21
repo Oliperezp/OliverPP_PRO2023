@@ -16,7 +16,7 @@ Desarrolle un algoritmo que permita leer dos valores distintos, determinar cual 
 
 ---
 
-### Diagrama de Flujo
+### Pseudocódigo
 
 1. Inicio 
 2. Inicializar variables: A=0,B=0
