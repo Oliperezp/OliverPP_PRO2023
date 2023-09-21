@@ -43,6 +43,8 @@ Pasos:
 </div>
   
 
+
+
 ## Ejercicio 2<a name="ejercicio2"></a>
 
 
@@ -74,4 +76,10 @@ Pasos:
 
 </dir>
 
+### Diagrama de Flujo 2
+  ---
 
+<div align="center">
+<img src="Images/diagrama%20de%20flujo%202.drawio.png"/>
+</div>
+  
