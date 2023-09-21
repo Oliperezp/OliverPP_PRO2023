@@ -2,7 +2,7 @@
 
 # Ejercicios
 
----
+
 
 ## INDICE
 
@@ -33,7 +33,7 @@ Desarrolle un algoritmo que permita leer dos valores distintos, determinar cual 
 
 </dir>
 
-- Diagrama de Flujo
+### Diagrama de Flujo
   ---
 
 <div align="center">
