@@ -28,7 +28,7 @@ Pasos:
 -  Si __A=B__ Entonces vuelve a 3 porque los valores deben ser distintos
 -  Si __A>B__ Entonces
    Escribir __A "es el mayor"__
--  De lo contrario: __Escribir B, "Es el mayor"__
+-  De lo contrario: Escribir __B, "Es el mayor"__
 -  Fin_si
 -  Fin.
 
