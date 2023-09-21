@@ -32,3 +32,11 @@ Desarrolle un algoritmo que permita leer dos valores distintos, determinar cual 
 
 
 </dir>
+
+- Diagrama de Flujo
+  ---
+
+<div align="center">
+<img src="https://github.com/Oliperezp/Programacion/blob/main/Unidad-1/Images/diagrama1.png?raw=true"/>
+</div>
+  
