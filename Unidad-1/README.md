@@ -48,7 +48,7 @@ Pasos:
 ## Ejercicio 2<a name="ejercicio2"></a>
 
 
-Desarrolle un algoritmo que permita leer tres valores y almacenarlos en las variables A, B y C
+Desarrolle un algoritmo que permita leer tres valores y almacenarlos en las variables __A, B y C__
 respectivamente. El algoritmo debe imprimir cual es el mayor y cual es el menor. Recuerde constatar que
 los tres valores introducidos por el teclado sean valores distintos. Presente un mensaje de alerta en caso de
 que se detecte la introducción de valores iguales.
@@ -60,16 +60,16 @@ que se detecte la introducción de valores iguales.
 Pasos:
 
 - Inicio
-- Inicializar las variables A, B y C
+- Inicializar las variables __A, B y C__
 - Leer los tres valores
-- Almacenar en las variables A, B y C
-- Si A > B y A > C Entonces
-- Escribir A “Es el mayor”
+- Almacenar en las variables __A, B y C__
+- Si __A > B__ y __A > C__ Entonces
+- Escribir __A “Es el mayor”__
 - Sino
-- Si B > A y B > C Entonces
-- Escribir B “Es el mayor”
+- Si __B > A__ y __B > C__ Entonces
+- Escribir __B “Es el mayor”__
 - Sino
-- Escribir C “Es el mayor”
+- Escribir __C “Es el mayor”__
 - Fin_Si
 - Fin_Si
 - Fin
