@@ -18,17 +18,19 @@ Desarrolle un algoritmo que permita leer dos valores distintos, determinar cual 
 
 ### Pseudocódigo
 
-1. Inicio 
-2. Inicializar variables: A=0,B=0
-3. Solicitar la introducción de los valores distintos.
-4. Leer los dos valores.
-5. Asignarlos a las variables A y B.
-6. Si A=B Entonces vuelve a 3 porque los valores deben ser distintos
-7. Si A>B Entonces
-   Escribir A "es el mayor"
-8. De lo contrario: Escribir B, "Es el mayor".
-9. Fin_si
-10. Fin.
+Pasos:
+
+- Inicio 
+-  Inicializar variables: __A=0,B=0__
+-  Solicitar la introducción de los valores distintos.
+-  Leer los dos valores.
+-  Asignarlos a las variables __A y B__
+-  Si __A=B__ Entonces vuelve a 3 porque los valores deben ser distintos
+-  Si __A>B__ Entonces
+   Escribir __A "es el mayor"__
+-  De lo contrario: __Escribir B, "Es el mayor"__
+-  Fin_si
+-  Fin.
 
 
 </dir>
