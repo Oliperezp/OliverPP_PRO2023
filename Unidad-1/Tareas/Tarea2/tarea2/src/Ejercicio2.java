@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 /**
  * @author Oliver
  * Ejercicio 2: Cual de tres numeros es el mayor
@@ -7,7 +8,7 @@ import java.util.Scanner;
 public class Ejercicio2 {
 
     /**
-     * algoritmo que permita leer tres valores y almacenarlos en las variables A, B y C respectivamente.
+     * Programa que permite leer tres valores y almacenarlos en las variables A, B y C respectivamente.
      * El algoritmo debe imprimir cual es el mayor y cual es el menor
      * @param args
      */
