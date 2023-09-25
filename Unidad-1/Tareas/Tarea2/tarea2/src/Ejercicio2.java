@@ -1,5 +1,6 @@
 /**
- * @author Nombre del autor
+ * @author Oliver
+ * Ejercicio 2: 
  */
 public class Ejercicio1 {
 
