@@ -16,12 +16,12 @@ Desarrolle un algoritmo que realice la sumatoria de los números enteros compren
 ## Pseudocódigo
 
 - Inicio  
-- Declaración de variables: N= 0, Suma = 0 
-- Asignación Contador : N = N + 1 
-- Asignación Acumulador: Suma = Suma + N 
-- Si N = 10 Entonces 
-- Escribir Suma 
-- De lo contrario, Repetir desde el paso 3 
+- Declaración de variables: __N= 0, Suma = 0__ 
+- Asignación Contador : __N = N + 1__ 
+- Asignación Acumulador: __Suma = Suma + N__ 
+- Si __N = 10__ Entonces 
+- Escribir __Suma__ 
+- De lo contrario, __Repetir desde el paso 3__ 
 - Fin_Si
 - Fin
 
