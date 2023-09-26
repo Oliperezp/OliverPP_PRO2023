@@ -5,7 +5,7 @@ import java.util.Scanner;
  * @author Oliver
  * Ejercicio 2: Cual de tres numeros es el mayor
  */
-public class Ejercicio2 {
+public class tarea2 {
 
     /**
      * Programa que permite leer tres valores y almacenarlos en las variables A, B y C respectivamente.
@@ -34,7 +34,7 @@ public class Ejercicio2 {
 
         if(num1 > num2 && num1>num3){
 
-         System.out.println("El numero 1, que es :" + num1 + "es el mayor");
+         System.out.println("El numero 1, que es :" + num1 + " es el mayor");
 
 
         }else{
