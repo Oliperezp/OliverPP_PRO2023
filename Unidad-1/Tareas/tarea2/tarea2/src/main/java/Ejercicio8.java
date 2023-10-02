@@ -18,7 +18,7 @@ public class Ejercicio8 {
 
         do{
             System.out.println("Dame la nota:");
-            nota=sc.nextInt();
+            nota=sc.nextDouble();
 
             cuenta=cuenta+1;
             acumulador=acumulador+nota;

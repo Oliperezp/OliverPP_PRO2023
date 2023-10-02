@@ -12,7 +12,7 @@ Se desarrolla un algoritmo que permita calcular Promedio de Notas; finaliza cuan
 ## Diagrama de flujos
 
 <div align="center">
-    <img src="images/diagrama-flujo.png"/> 
+    <img src="images/diagrama_ejercicio8.drawio.png"/> 
 </div>
 
 ## Pseudocódigo
