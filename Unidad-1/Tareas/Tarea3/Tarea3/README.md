@@ -14,11 +14,19 @@ El ejercicio consiste en escribir un programa que encuentre e imprima todos los 
 Pasos:
 - Inicio
 - Inicializar variables: __rango,suma__
-- Solicitar la introducción del rango
-- Leer el valor
-- Mientras rango>i hacer
-- 
-- FinMientras
+- Solicitar la introducción del __rango__
+- Leer el __valor__
+- Desde __i__ hasta __rango__ hacer
+  Incremento __1__
+- __Suma=0__
+- Desde __j__ hasta __i__ hacer
+  incremento __1__
+- Si el resto de i entre j es 0 entonces
+- __suma=suma+j__
+- FinSi
+- Si suma es igual a __i__ entonces
+- "El numero",__i__,"es perfecto"
+- FinSi
 - Fin
 
 

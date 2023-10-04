@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * @author Nombre del autor
  */
