@@ -6,7 +6,7 @@ El ejercicio consiste en escribir un programa que encuentre e imprima todos los 
 
 ### Diagrama de Flujo
 <div align="center">
-<img src="images/diagrama-flujo.png"/>
+<img src="images/diagrama_tarea3.drawio.png"/>
 </div>
 
 ### Pseudocódigo
@@ -15,7 +15,7 @@ Pasos:
 - Inicio
 - Inicializar variables: __rango,suma__
 - Solicitar la introducción del __rango__
-- Leer el __valor__
+- Leer el __rango__
 - Desde __i__ hasta __rango__ hacer
   Incremento __1__
 - __Suma=0__
