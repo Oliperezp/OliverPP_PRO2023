@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ddcaae20-f0df-4cad-8903-c3def778d1df" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Tarea3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Tarea4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/images/diagrama_tarea3.drawio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/images/file.clean" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea4/target/classes/ies/puerto/EjercicioNumeroPerfecto.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2WLcUnjmQT6WfZGtnt3bVjmkfqF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ddcaae20-f0df-4cad-8903-c3def778d1df" name="Changes" comment="" />
+      <created>1696515319816</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696515319816</updated>
+    </task>
+    <servers />
+  </component>
+</project>
