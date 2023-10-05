@@ -4,44 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddcaae20-f0df-4cad-8903-c3def778d1df" name="Changes" comment="se sube ejecicio tarea4">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Tarea3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Tarea4.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/images/diagrama_tarea3.drawio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/images/file.clean" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio10.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio7.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio8.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/src/main/java/ies/puerto/Ejercicio9.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea4/target/classes/ies/puerto/EjercicioNumeroPerfecto.class" beforeDir="false" />
+    <list default="true" id="ddcaae20-f0df-4cad-8903-c3def778d1df" name="Changes" comment="cambios tarea 4">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Ejercicio4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,23 +23,44 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 2
 }]]></component>
   <component name="ProjectId" id="2WLcUnjmQT6WfZGtnt3bVjmkfqF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Ejercicio3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ejercicio3" />
+      <module name="Tarea1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Ejercicio3" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -92,11 +78,21 @@
       <option name="project" value="LOCAL" />
       <updated>1696515632749</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="cambios tarea 4">
+      <option name="closed" value="true" />
+      <created>1696515743375</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696515743375</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="se sube ejecicio tarea4" />
-    <option name="LAST_COMMIT_MESSAGE" value="se sube ejecicio tarea4" />
+    <MESSAGE value="cambios tarea 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambios tarea 4" />
   </component>
 </project>
