@@ -22,7 +22,7 @@ public class Ejercicio4 {
 
 
 
-        while(numeroPalindromo!=0){
+        while(numeroPalindromo<=0){
 
             resto=falta%10;
             numeroInvertido=numeroInvertido*10+resto;

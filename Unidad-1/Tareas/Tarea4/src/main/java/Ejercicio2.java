@@ -13,6 +13,7 @@ public class Ejercicio2 {
         Scanner sc = new Scanner(System.in);
 
 
+        int aux;
 
         System.out.println("Dame el primero numero para el MCD:");
         int numero1=sc.nextInt();
@@ -20,7 +21,17 @@ public class Ejercicio2 {
         int numero2=sc.nextInt();
 
 
+        while(numero2!=0){
 
+            aux=numero2;
+            numero2=numero1%numero2;
+            numero1=aux;
+
+
+        }
+
+
+        System.out.println("El MCD de estos dos numero es:" +numero1);
 
 
     }

@@ -14,10 +14,12 @@ public class Ejercicio1 {
 
     public static void main(String[] args) {
 
+        int numero=1;
+        int numeroFilas=4;
 
 
 
-        for (int i = 1; i <=10 ; i++) {
+        for (int i = 1; i <=numeroFilas ; i++) {
             System.out.println("");
 
             for (int j=1; j <= i; j++) {
