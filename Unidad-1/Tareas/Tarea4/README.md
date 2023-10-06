@@ -2,12 +2,20 @@
 
 # Ejercicio 1 <a name="ejercicio1"></a>
 
-Desarrolle un algoritmo que permita leer dos valores distintos, determinar cual de los dos valores es el mayor y escribirlo.
+Escribe un programa en Java que imprima el patrón siguiente:
+
+1
+
+2 3
+
+4 5 6
+
+7 8 9 10
 
 ### Diagrama de Flujo
 
 
->
+
 
 ### Pseudocódigo
 
@@ -33,7 +41,9 @@ Escribe un programa en Java que encuentre el máximo común divisor (MCD) de dos
 
 ### Diagrama de Flujo
 
-
+<div align="center">
+<img src="images/diagrama_ejercicio2.drawio.png">
+</div>
 
 ### Pseudocódigo
 
@@ -61,7 +71,9 @@ Se debe solicitar el número por teclado.
 
 ### Diagrama de Flujo
 
-
+<div align="center">
+<img src="images/diagrama_ejercicio3.drawio.png">
+</div>
 
 
 ### Pseudocódigo
@@ -114,6 +126,9 @@ Se debe solicitar el número n por teclado.
 
 ### Diagrama de Flujo
 
+<div align="center">
+<img src="images/diagrama_ejercicio5.drawio.png">
+</div>
 
 
 ### Pseudocódigo
@@ -135,7 +150,7 @@ Pasos:
 
 # Ejercicio 6 <a name="ejercicio1"></a>
 
-Desarrolle un algoritmo que permita leer dos valores distintos, determinar cual de los dos valores es el mayor y escribirlo.
+Describe un programa en Java que encuentre todos los números Armstrong entre 1 y 1000.
 
 ### Diagrama de Flujo
 
@@ -165,8 +180,9 @@ Imprimir el nombre del día de la semana correspondiente a un número ingresado 
 
 ### Diagrama de Flujo
 
-<img src="images/diagrama-flujo.png"
-/>
+<div align="center">
+<img src="images/diagrama_ejercicio7.drawio.png">
+</div>
 
 ### Pseudocódigo
 
@@ -203,7 +219,9 @@ Encontrar y mostrar todos los números perfectos en un rango dado utilizando un 
 
 ### Diagrama de Flujo
 
-
+<div align="center">
+<img src="images/diagrama_ejercicio8.drawio.png">
+</div>
 
 ### Pseudocódigo
 
@@ -230,7 +248,9 @@ Imprimir la tabla de multiplicar de un número ingresado por el usuario utilizan
 
 ### Diagrama de Flujo
 
-
+<div align="center">
+<img src="images/diagrama_ejercicio10.drawio.png">
+</div>
 
 ### Pseudocódigo
 
