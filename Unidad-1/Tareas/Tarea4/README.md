@@ -1,5 +1,14 @@
 <div align="justify">
 
+
+# TAREA 4-PROGRAMACION(BUCLES Y IF)
+
+## INDICE
+
+- [Ejercicio 1](#ejercicio1)
+- [Ejercicio 2](#ejercicio2)
+- [Ejercicio 3](#ejercicio3)
+
 # Ejercicio 1 <a name="ejercicio1"></a>
 
 Escribe un programa en Java que imprima el patrón siguiente:
@@ -35,7 +44,7 @@ Pasos:
 
 
 
-# Ejercicio 2* <a name="ejercicio1"></a>
+# Ejercicio 2* <a name="ejercicio2"></a>
 
 Escribe un programa en Java que encuentre el máximo común divisor (MCD) de dos números.
 
