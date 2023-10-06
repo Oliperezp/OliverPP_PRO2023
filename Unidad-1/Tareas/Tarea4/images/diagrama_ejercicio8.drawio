@@ -1,9 +1,57 @@
-<mxfile host="app.diagrams.net" modified="2023-10-06T17:16:30.642Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" version="22.0.3" etag="1U7NAPHzFeUYjrOKBRMt" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-06T17:22:02.782Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="dmkUJwM7_uJqP4uw_ABq" version="22.0.3" type="github">
   <diagram name="Página-1" id="YKe6ZGgzqoObkCjaug9G">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="bsicV0F9C5O2ZPwaJInM-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bsicV0F9C5O2ZPwaJInM-1" target="bsicV0F9C5O2ZPwaJInM-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bsicV0F9C5O2ZPwaJInM-1" value="INICIO&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bsicV0F9C5O2ZPwaJInM-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bsicV0F9C5O2ZPwaJInM-2" target="bsicV0F9C5O2ZPwaJInM-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bsicV0F9C5O2ZPwaJInM-2" value="Escribir &quot;¿Tabla del?&quot;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="450" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bsicV0F9C5O2ZPwaJInM-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bsicV0F9C5O2ZPwaJInM-3" target="bsicV0F9C5O2ZPwaJInM-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bsicV0F9C5O2ZPwaJInM-3" value="Leer tabla" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bsicV0F9C5O2ZPwaJInM-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bsicV0F9C5O2ZPwaJInM-6" target="bsicV0F9C5O2ZPwaJInM-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bsicV0F9C5O2ZPwaJInM-6" value="multiplicacion" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bsicV0F9C5O2ZPwaJInM-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bsicV0F9C5O2ZPwaJInM-8" target="bsicV0F9C5O2ZPwaJInM-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bsicV0F9C5O2ZPwaJInM-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bsicV0F9C5O2ZPwaJInM-8" target="bsicV0F9C5O2ZPwaJInM-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bsicV0F9C5O2ZPwaJInM-8" value="Desde i=1 hasta 10 incrementar 1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="770" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bsicV0F9C5O2ZPwaJInM-11" value="multiplicacion=tabla*i" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bsicV0F9C5O2ZPwaJInM-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bsicV0F9C5O2ZPwaJInM-15" target="bsicV0F9C5O2ZPwaJInM-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bsicV0F9C5O2ZPwaJInM-15" value="Escribir &quot;tabla + &quot;x&quot; + i + &quot;=&quot; + multiplicacion&quot;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="980" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bsicV0F9C5O2ZPwaJInM-17" value="i=10" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="235" y="798" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bsicV0F9C5O2ZPwaJInM-18" value="FIN" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1090" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
