@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddcaae20-f0df-4cad-8903-c3def778d1df" name="Changes" comment="cambios tarea 4">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_10_23_18_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_10_23_18_29__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Ejercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Ejercicio1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +41,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.Ejercicio10">
+}]]></component>
+  <component name="RunManager" selected="Application.Ejercicio1">
     <configuration name="Ejercicio1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Ejercicio1" />
-      <module name="Tarea1" />
+      <module name="Tarea4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,10 +95,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ejercicio1" />
         <item itemvalue="Application.Ejercicio10" />
         <item itemvalue="Application.Ejercicio4" />
         <item itemvalue="Application.Ejercicio2" />
-        <item itemvalue="Application.Ejercicio1" />
         <item itemvalue="Application.Ejercicio3" />
       </list>
     </recent_temporary>
@@ -101,6 +111,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696515319816</updated>
+      <workItem from="1696681003351" duration="2548000" />
     </task>
     <task id="LOCAL-00001" summary="se sube ejecicio tarea4">
       <option name="closed" value="true" />
@@ -184,6 +195,9 @@
     </task>
     <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

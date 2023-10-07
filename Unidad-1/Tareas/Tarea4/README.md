@@ -8,6 +8,13 @@
 - [Ejercicio 1](#ejercicio1)
 - [Ejercicio 2](#ejercicio2)
 - [Ejercicio 3](#ejercicio3)
+- [Ejercicio 4](#ejercicio4)
+- [Ejercicio 5](#ejercicio5)
+- [Ejercicio 6](#ejercicio6)
+- [Ejercicio 7](#ejercicio7)
+- [Ejercicio 8](#ejercicio8)
+- [Ejercicio 9](#ejercicio9)
+- [Ejercicio 10](#ejercicio10)
 
 # Ejercicio 1 <a name="ejercicio1"></a>
 
@@ -23,28 +30,27 @@ Escribe un programa en Java que imprima el patrón siguiente:
 
 ### Diagrama de Flujo
 
-
+<div align="center">
+<img src="images/diagrama_ejercicio1.drawio.png">
+</div>
 
 
 ### Pseudocódigo
 
 Pasos:
 - Inicio
-- Inicializar variables: __A = 0, B = 0__
-- Solicitar la introducción de dos valores distintos
-- Leer los dos valores
-- Asignarlos a las variables A y B
-- Si ___A = B___ Entonces vuelve a 3 porque los valores deben ser distintos
-- Si ___A > B___ Entonces
-  Escribir A, __“Es el mayor”__
-- De lo contrario: Escribir __B, “Es el mayor”__
-- Fin_Si
+- Inicializar variables: numero=1
+- Desde i=1 hasta 4 incrementar 1
+- Escribir "" 
+- Desde j=1 hasta i incrementar 1
+- Escribir numero
+- numero++
 - Fin
 
 
 
 
-# Ejercicio 2* <a name="ejercicio2"></a>
+# Ejercicio 2 <a name="ejercicio2"></a>
 
 Escribe un programa en Java que encuentre el máximo común divisor (MCD) de dos números.
 
@@ -73,7 +79,7 @@ Pasos:
 
 
 
-# Ejercicio 3* <a name="ejercicio1"></a>
+# Ejercicio 3 <a name="ejercicio3"></a>
 
 Escribe un programa en Java que encuentre el número de Fibonacci en la posición n.
 Se debe solicitar el número por teclado.
@@ -104,7 +110,7 @@ Pasos:
 
 
 
-# Ejercicio 4 <a name="ejercicio1"></a>
+# Ejercicio 4 <a name="ejercicio4"></a>
 
 Escribe un programa en Java que verifique si un número es palíndromo. Se debe solicitar el número por teclado.
 
@@ -114,21 +120,9 @@ Escribe un programa en Java que verifique si un número es palíndromo. Se debe 
 
 ### Pseudocódigo
 
-Pasos:
-- Inicio
-- Inicializar variables: __A = 0, B = 0__
-- Solicitar la introducción de dos valores distintos
-- Leer los dos valores
-- Asignarlos a las variables A y B
-- Si ___A = B___ Entonces vuelve a 3 porque los valores deben ser distintos
-- Si ___A > B___ Entonces
-  Escribir A, __“Es el mayor”__
-- De lo contrario: Escribir __B, “Es el mayor”__
-- Fin_Si
-- Fin
 
 
-# Ejercicio 5* <a name="ejercicio1"></a>
+# Ejercicio 5 <a name="ejercicio5"></a>
 
 Escribe un programa en Java que imprima los primeros n términos de la secuencia de Fibonacci.
 Se debe solicitar el número n por teclado.
@@ -157,14 +151,13 @@ Pasos:
 - Fin
 
 
-# Ejercicio 6 <a name="ejercicio1"></a>
+# Ejercicio 6 <a name="ejercicio6"></a>
 
 Describe un programa en Java que encuentre todos los números Armstrong entre 1 y 1000.
 
 ### Diagrama de Flujo
 
-<img src="images/diagrama-flujo.png"
-/>
+
 
 ### Pseudocódigo
 
@@ -183,7 +176,7 @@ Pasos:
 
 
 
-# Ejercicio 7* <a name="ejercicio1"></a>
+# Ejercicio 7 <a name="ejercicio7"></a>
 
 Imprimir el nombre del día de la semana correspondiente a un número ingresado por el usuario utilizando una estructura switch.
 
@@ -222,7 +215,7 @@ Pasos:
 
 
 
-# Ejercicio 8* <a name="ejercicio1"></a>
+# Ejercicio 8 <a name="ejercicio8"></a>
 
 Encontrar y mostrar todos los números perfectos en un rango dado utilizando un bucle for. Solicita el límite por teclado.
 
@@ -250,7 +243,7 @@ Encontrar y mostrar todos los números perfectos en un rango dado utilizando un 
 - Fin
 
 
-# Ejercicio 9* <a name="ejercicio1"></a>
+# Ejercicio 9 <a name="ejercicio9"></a>
 
 Imprimir la tabla de multiplicar de un número ingresado por el usuario utilizando un bucle for.
 
@@ -258,8 +251,9 @@ Imprimir la tabla de multiplicar de un número ingresado por el usuario utilizan
 ### Diagrama de Flujo
 
 <div align="center">
-<img src="images/diagrama_ejercicio10.drawio.png">
+<img src="images/diagrama_ejercicio9.drawio.png">
 </div>
+
 
 ### Pseudocódigo
 
@@ -276,11 +270,14 @@ Pasos:
 
 
 
-# Ejercicio 10* <a name="ejercicio1"></a>
+# Ejercicio 10 <a name="ejercicio10"></a>
 
 Calcular la suma de todos los números pares entre 1 y un número ingresado por el usuario utilizando un bucle do-while.
 ### Diagrama de Flujo
 
+<div align="center">
+<img src="images/diagrama_ejercicio10.drawio.png">
+</div>
 
 
 ### Pseudocódigo
