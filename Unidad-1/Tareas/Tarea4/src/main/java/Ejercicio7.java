@@ -10,7 +10,7 @@ public class Ejercicio7 {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Dime el numero del dia de la semana que quieres: ");
-        int opcion=sc.nextInt();  //se introduce el dia de la semana desde el 1 hasta 7
+        int opcion=sc.nextInt();
 
         switch (opcion){
 

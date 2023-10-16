@@ -5,7 +5,7 @@ public class Ejercicio8 {
 
     /**
      * Encontrar y mostrar todos los números perfectos en un rango dado utilizando un bucle for. Solicita el límite por teclado.
-     *
+     * @author Oliver
      * @param args
      */
     public static void main(String[] args) {
