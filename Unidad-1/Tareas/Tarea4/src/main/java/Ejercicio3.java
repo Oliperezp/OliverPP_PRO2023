@@ -2,20 +2,9 @@ import java.util.Scanner;
 
 public class Ejercicio3 {
 
-    /**
-     * Escribe un programa en Java que encuentre el número de Fibonacci en la posición n.
-     * Se debe solicitar el número por teclado.
-     *
-     * @param args
-     */
-
-    public static void main(String[] args) {
 
 
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Dame la posicion que quieres: "); //se pide al usuario la posición fibonacci
-        int posicion = sc.nextInt(); // se pide la posicion a la que quieres llegar en fibonacci
+    public static int calcularPosicionFibo(int posicion){
 
         int numero1 = 1;
         int numero2 = 1;
@@ -35,9 +24,34 @@ public class Ejercicio3 {
 
 
 
-        }
 
-        System.out.println("El numero en esa posicion es :" + sumaFibonacci);
+        }
+       System.out.println("El numero en esa posicion es :" + sumaFibonacci);
+
+        return sumaFibonacci;
+
+    }
+
+
+
+    /**
+     * Escribe un programa en Java que encuentre el número de Fibonacci en la posición n.
+     * Se debe solicitar el número por teclado.
+     *
+     * @param args
+     */
+
+    public static void main(String[] args) {
+
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Dame la posicion que quieres: "); //se pide al usuario la posición fibonacci
+        int posicion = sc.nextInt(); // se pide la posicion a la que quieres llegar en fibonacci
+
+       calcularPosicionFibo(posicion);
+
+
 
     }
 
