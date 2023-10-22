@@ -77,6 +77,7 @@
                     <systemPropertyVariables>
                         <jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>
                     </systemPropertyVariables>
+
                     <rules>
                         <rule>
                             <element>PACKAGE</element>
