@@ -5,25 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="857f8a65-6426-4499-bc70-b96df1297332" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/Ejercicio1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tarea-funciones/src/main/java/ies/puerto/Ejercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tarea-funciones/src/main/java/ies/puerto/Ejercicio1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tarea-funciones/src/main/java/ies/puerto/Ejercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tarea-funciones/src/main/java/ies/puerto/Ejercicio3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tarea-funciones/src/main/java/ies/puerto/Ejercicio4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tarea-funciones/src/main/java/ies/puerto/Ejercicio4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tarea-funciones/src/main/java/ies/puerto/Ejercicio5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tarea-funciones/src/main/java/ies/puerto/Ejercicio5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tarea-funciones/src/test/java/ies/puerto/Ejercicio1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tarea-funciones/src/test/java/ies/puerto/Ejercicio1Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tarea-funciones/src/test/java/ies/puerto/Ejercicio2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tarea-funciones/src/test/java/ies/puerto/Ejercicio2Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tarea-funciones/src/test/java/ies/puerto/Ejercicio3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tarea-funciones/src/test/java/ies/puerto/Ejercicio3Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tarea-funciones/src/test/java/ies/puerto/Ejercicio4Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tarea-funciones/src/test/java/ies/puerto/Ejercicio4Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tarea-funciones/src/test/java/ies/puerto/Ejercicio5Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tarea-funciones/src/test/java/ies/puerto/Ejercicio5Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tarea-funciones/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tarea-funciones/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ies/puerto/Ejercicio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ies/puerto/Ejercicio2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ies/puerto/Ejercicio2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ies/puerto/Ejercicio2Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,22 +34,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/dam/Programacion/Unidad-1/Tareas/trabajo_metodos_2/src/main/java/ies/puerto/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "onboarding.tips.debug.path": "/home/dam/Programacion/Unidad-1/Tareas/trabajo_metodos_2/src/main/java/ies/puerto/Main.java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ies.puerto" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Ejercicio1Test.calcularSueldoHoras20Test">
-    <configuration name="Ejercicio1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Ejercicio2">
+    <configuration name="Ejercicio2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ies.puerto.Ejercicio2" />
       <module name="trabajo_metodos_2" />
       <extension name="coverage">
         <pattern>
@@ -71,9 +64,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ies.puerto" />
-      <option name="MAIN_CLASS_NAME" value="ies.puerto.Ejercicio1Test" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,7 +100,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ejercicio1Test.calcularSueldoHorasOkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Ejercicio2Test.chequearNumeroTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="trabajo_metodos_2" />
       <extension name="coverage">
         <pattern>
@@ -119,8 +109,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ies.puerto" />
-      <option name="MAIN_CLASS_NAME" value="ies.puerto.Ejercicio1Test" />
-      <option name="METHOD_NAME" value="calcularSueldoHorasOkTest" />
+      <option name="MAIN_CLASS_NAME" value="ies.puerto.Ejercicio2Test" />
+      <option name="METHOD_NAME" value="chequearNumeroTest(int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ejercicio2Test.chequearNumeroTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trabajo_metodos_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ies.puerto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ies.puerto" />
+      <option name="MAIN_CLASS_NAME" value="ies.puerto.Ejercicio2Test" />
+      <option name="METHOD_NAME" value="chequearNumeroTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,10 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Ejercicio1Test.calcularSueldoHoras20Test" />
+        <item itemvalue="Application.Ejercicio2" />
         <item itemvalue="JUnit.Ejercicio1Test.calcularSueldoHoras10Test" />
-        <item itemvalue="JUnit.Ejercicio1Test.calcularSueldoHorasOkTest" />
-        <item itemvalue="JUnit.Ejercicio1Test" />
+        <item itemvalue="JUnit.Ejercicio2Test.chequearNumeroTest (1)" />
+        <item itemvalue="JUnit.Ejercicio2Test.chequearNumeroTest" />
+        <item itemvalue="JUnit.Ejercicio1Test.calcularSueldoHoras20Test" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +150,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698072520968</updated>
+      <workItem from="1698086077065" duration="6014000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

@@ -1,19 +1,49 @@
 package ies.puerto;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
+import javax.security.sasl.SaslClient;
+import java.util.Scanner;
+
+
 public class Ejercicio2 {
 
-    //Realiza un programa que tenga un método al que se le pase un número e indique si es positivo o negativo y si es par o impar.
+    /**
+     * Funcion que chequea se un numero es positivo o negativo
+     * @param numero para chequear que el numero es o positivo o negativo
+     * @return true o false dependiendo de si el numero es positivo o negativo
+     */
+    public boolean esPositivoNegativo(int numero) {
+        if (numero > 0) {
+            return true;
+        }
+        return false;
+    }
 
-    public boolean esPositivo(int numero){
+    /**
+     * Funcion que chequea se un numero es por o Impar
+     * @param numero para chequear que el numero es o Par o Impar
+     * @return true o false dependiendo de si el numero es par o Impar
+     */
+    public  boolean esParImpar(int numero) {
+        if (numero % 2 == 0) {
+            return true;
+        }
+        return false;
+    }
 
-        boolean resultado=false;
-
-
+    /*
+    public  boolean chequearNumero(int numero){
+        boolean resultadoParImpar=esParImpar(numero);
+        boolean resultado = esPositivoNegativo(numero,resultadoParImpar);
 
         return resultado;
-    }
+
+}
+*/
+
+
+
+
 
 
 }
