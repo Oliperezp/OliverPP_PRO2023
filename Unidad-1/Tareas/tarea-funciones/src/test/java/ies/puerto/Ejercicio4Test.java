@@ -21,13 +21,12 @@ public class Ejercicio4Test {
     }
 
     @Test
-    public void calcularNumeroMayorDeTresTest() {
+    public void calcularNumeroMayorTresNumerosTest() {
         int numero1 = 2;
         int numero2 = 3;
         int numero3 = 4;
-        int resultadoOk=4;
-      int resultado = ejercicio4.numeroMayor(4);
-        Assertions.assertEquals(resultado, resultadoOk, "No se ha obtenido el resultado esperado");
+        int resultado = ejercicio4.numeroMayor(numero1,numero2,numero3);
+        int resultadoOk = 4;
+        Assertions.assertEquals(resultado,resultadoOk, "No se ha obtenido el resultado esperado");
     }
-
 }

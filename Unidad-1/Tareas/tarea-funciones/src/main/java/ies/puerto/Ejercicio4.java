@@ -20,7 +20,12 @@ public class Ejercicio4 {
    return resultado;
     }
 
+public int numeroMayor(int numero1,int numero2,int numero3){
 
+        int resultadoDosNumeros=numeroMayor(numero1,numero2);
+
+        return numeroMayor(resultadoDosNumeros,numero3);
+}
 
 
 

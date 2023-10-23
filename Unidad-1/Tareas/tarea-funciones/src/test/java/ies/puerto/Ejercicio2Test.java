@@ -12,10 +12,17 @@ public class Ejercicio2Test {
     }
 
     @Test
-    public void calcularCirculo() {
+    public void calcularCirculoTest() {
         int radio = 3;
         double resultadoOk = 28.274333882308138;
         double resultado = ejercicio2.areaCirculo(radio);
         Assertions.assertEquals(resultadoOk, resultado, "No se ha obtenido el resultado esperado");
+    }
+    @Test
+    public void calcularCirculoErrorTest() {
+        int radio = 3;
+        double resultadoOk = 28.274333882308134;
+        double resultado = ejercicio2.areaCirculo(radio);
+        Assertions.assertNotEquals(resultadoOk, resultado, "No se ha obtenido el resultado esperado");
     }
 }

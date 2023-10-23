@@ -14,9 +14,9 @@ public class Ejercicio5Test {
     }
 
     @Test
-    public void calcularCuadradoTest() {
+    public void calcularPrimoTest() {
        boolean resultadoOk = true;
-       boolean resultado = ejercicio5.numeroPrimo(7);
+       boolean resultado = ejercicio5.numeroPrimo(11);
         Assertions.assertEquals(resultadoOk, resultado, "No se ha obtenido el resultado esperado");
     }
 

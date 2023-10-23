@@ -10,7 +10,7 @@ public class Ejercicio3 {
      */
     public int areaCuadrado(int a) {
 
-        return a*4;
+        return areaRectangulo(a,a);
     }
 
     /**
