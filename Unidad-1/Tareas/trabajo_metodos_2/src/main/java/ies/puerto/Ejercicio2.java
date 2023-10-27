@@ -31,19 +31,5 @@ public class Ejercicio2 {
         return false;
     }
 
-    /*
-    public  boolean chequearNumero(int numero){
-        boolean resultadoParImpar=esParImpar(numero);
-        boolean resultado = esPositivoNegativo(numero,resultadoParImpar);
-
-        return resultado;
-
-}
-*/
-
-
-
-
-
 
 }

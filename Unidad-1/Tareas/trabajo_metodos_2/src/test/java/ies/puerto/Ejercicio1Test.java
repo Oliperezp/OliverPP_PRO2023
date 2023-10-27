@@ -20,21 +20,21 @@ public class Ejercicio1Test {
 
     public void calcularSueldoHoras20Test(){
 
-        calculoHorasErroneo(20);
+        calculoHoras(20.5f);
 
     }
-    public int calculoHoras(int numeroHoras) {
+    public double calculoHoras(float numeroHoras) {
 
-        int resultado = ejercicio1.calcularSueldoHoras(numeroHoras);
-        Assertions.assertEquals(100, resultado, "No es el resultado correcto");
+        double resultado = ejercicio1.calcularSueldoHoras(numeroHoras);
+        Assertions.assertEquals(205, resultado, "No es el resultado correcto");
 
         return resultado;
     }
 
     @Test
-    public int calculoHorasErroneo(int numeroHoras){
+    public double calculoHorasErroneo(float numeroHoras){
 
-        int resultado=ejercicio1.calcularSueldoHoras(numeroHoras);
+        double resultado=ejercicio1.calcularSueldoHoras(numeroHoras);
         Assertions.assertNotEquals(100,resultado,"No es el resultado correcto");
 
         return resultado;
