@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="857f8a65-6426-4499-bc70-b96df1297332" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ies/puerto/Ejercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ies/puerto/Ejercicio1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ies/puerto/Ejercicio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ies/puerto/Ejercicio2.java" afterDir="false" />
+    <list default="true" id="857f8a65-6426-4499-bc70-b96df1297332" name="Changes" comment="cambios en trabajo_metodos_2 Ejercicio3">
       <change beforePath="$PROJECT_DIR$/src/main/java/ies/puerto/Ejercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ies/puerto/Ejercicio3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ies/puerto/Ejercicio1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ies/puerto/Ejercicio1Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ies/puerto/Ejercicio2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ies/puerto/Ejercicio2Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ies/puerto/Ejercicio3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ies/puerto/Ejercicio3Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,6 +148,19 @@
       <option name="presentableId" value="Default" />
       <updated>1698072520968</updated>
     </task>
+    <task id="LOCAL-00001" summary="cambios en trabajo_metodos_2 Ejercicio3">
+      <option name="closed" value="true" />
+      <created>1698423333042</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698423333042</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cambios en trabajo_metodos_2 Ejercicio3" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambios en trabajo_metodos_2 Ejercicio3" />
   </component>
 </project>

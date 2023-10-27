@@ -96,7 +96,7 @@ public class Ejercicio3 {
      */
 
     public int mostrarNumerosCreciente(int valor1,int valor2){
-        int valorMenor=menor(3,5);
+        int valorMenor=menor(valor1,valor2);
 
        return valorMenor;
     }
@@ -131,7 +131,7 @@ public class Ejercicio3 {
      * @return el numero mayor de dos numeros
      */
     public int mostrarNumerosDecreciente(int valor1,int valor2){
-        int valorMayor=mayor(3,5);
+        int valorMayor=mayor(valor1,valor2);
 
         return valorMayor;
     }
