@@ -7,7 +7,7 @@ public class Ejercicio3Test {
     Ejercicio3 ejericicio3 = new Ejercicio3();
 
     @Test
-    public void calcularNumeroMayorTest(){
+    public void calcularNumeroMayorOkTest(){
 
         int resultado= ejericicio3.numeroMayor();
         int resultadoOk = 9;
@@ -16,7 +16,7 @@ public class Ejercicio3Test {
     }
 
     @Test
-    public void calcularNumeroMenorTest(){
+    public void calcularNumeroMenorOkTest(){
 
         int resultado= ejericicio3.numeroMenor();
         int resultadoOk = 1;

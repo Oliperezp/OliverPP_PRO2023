@@ -11,7 +11,7 @@ public class Ejercicio3 {
         int[] arrayMayor = {2,8,4,1,9};
 
         int mayor = arrayMayor[0];
-        for (int i = 0; i < arrayMayor.length; i++) {
+        for (int i = 1; i < arrayMayor.length; i++) {
 
          if(arrayMayor[i]>mayor){
 
@@ -32,7 +32,7 @@ public class Ejercicio3 {
         int[] arrayMenor = {2,8,4,1,9};
 
         int menor = arrayMenor[0];
-        for (int i = 0; i < arrayMenor.length; i++) {
+        for (int i = 1; i < arrayMenor.length; i++) {
 
             if(arrayMenor[i]<menor){
 

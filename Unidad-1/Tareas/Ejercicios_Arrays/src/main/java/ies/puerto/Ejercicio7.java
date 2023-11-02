@@ -7,7 +7,7 @@ public class Ejercicio7 {
      * Funcion que ordena los elementos de un array de forma creciente
      * @param array
      */
-    public static void ordenarAscendente(int[] array) {
+    public void ordenarAscendente(int[] array) {
 
         int[] numeros = {23,33,11,20,19};
 

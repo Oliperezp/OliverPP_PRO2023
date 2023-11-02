@@ -11,16 +11,12 @@ public class Ejercicio9 {
         int[] primerArray={1,2,3};
         int[] segundoArray={4,5,6};
 
-        int[] arraysCombinados=combinarArrays(primerArray,segundoArray);
+        int[] arraysCombinados=combinarDosArrays(primerArray,segundoArray);
 
         for (int i = 0; i <arraysCombinados.length ; i++) {
 
-            System.out.println(i + "");
+            System.out.println(arraysCombinados[i] + "");
         }
-
-
-
-
     }
 
     /**
@@ -29,25 +25,19 @@ public class Ejercicio9 {
      * @param array2
      * @return el array resultante unido
      */
-    public int[] combinarArrays (int[]array1,int[] array2){
+    public int[] combinarDosArrays (int[]array1,int[] array2){
 
      int tamañoArrayResultante=array1.length+array2.length;
 
      int[] arrayResultante=new int[tamañoArrayResultante];
 
-
         for (int i = 0; i <array1.length ; i++) {
-
             arrayResultante[i]=i;
-
-
         }
 
         for (int i = 0; i <array2.length ; i++) {
-
             arrayResultante[i]=i;
         }
-
         return arrayResultante;
     }
 

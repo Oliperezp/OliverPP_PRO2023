@@ -8,7 +8,7 @@ public class Ejercicio6 {
     /**
      * Funcion que coge una matriz original y la invierte en otro array llamado matrizTranspuesta
      */
-    public void matrizOriginal() {
+    public int[][] matrizOriginal() {
 
         int[][] matrizOriginal = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         int[][] matrizTraspuesta = new int[3][3];
@@ -25,6 +25,7 @@ public class Ejercicio6 {
         }
 
 
+        return matrizTraspuesta;
     }
 
     /**
