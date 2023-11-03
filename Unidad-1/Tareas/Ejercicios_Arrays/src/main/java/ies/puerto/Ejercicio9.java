@@ -27,9 +27,9 @@ public class Ejercicio9 {
      */
     public int[] combinarDosArrays (int[]array1,int[] array2){
 
-     int tamañoArrayResultante=array1.length+array2.length;
+     int tamanioArrayResultante=array1.length+array2.length;
 
-     int[] arrayResultante=new int[tamañoArrayResultante];
+     int[] arrayResultante=new int[tamanioArrayResultante];
 
         for (int i = 0; i <array1.length ; i++) {
             arrayResultante[i]=i;

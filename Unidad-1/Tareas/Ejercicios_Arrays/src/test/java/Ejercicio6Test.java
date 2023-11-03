@@ -9,7 +9,8 @@ public class Ejercicio6Test {
     @Test
     public void comprobarTraspuesta(){
 
-        int[][] resultado = ejercicio6.matrizOriginal();
+        int[][] matrizOriginal={{1,2,3},{4,5,6},{7,8,9}};
+        int[][] resultado = ejercicio6.matrizOriginal(matrizOriginal);
         int[][] resultadoOk = {{1,4,7},{2,5,8},{3,6,9}};
 
         Assertions.assertEquals(resultado,resultadoOk,"No es el resultado esperado");

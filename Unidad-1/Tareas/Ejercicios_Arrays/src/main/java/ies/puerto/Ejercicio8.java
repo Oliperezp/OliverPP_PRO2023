@@ -2,7 +2,7 @@ package ies.puerto;
 
 public class Ejercicio8 {
 
-     public void eliminarDuplicados(){
+     public int[] eliminarDuplicados(){
 
          int[]arrayOriginal={2,3,7,7,9,3,1,3};
          int tamanioArrayOriginal = arrayOriginal.length;
@@ -11,12 +11,21 @@ public class Ejercicio8 {
 
          for (int i = 0; i <arrayOriginal.length ; i++) {
 
+             for (int j = i+1; j < arrayOriginal.length ; j++) {
+
+                 if(arrayOriginal[i]!=arrayOriginal[j]){
+
+                     arrayOriginal[i]=arrayResultante[j];
+
+                 }
+
+             }
 
 
 
          }
 
-
+           return arrayResultante;
      }
 
 
