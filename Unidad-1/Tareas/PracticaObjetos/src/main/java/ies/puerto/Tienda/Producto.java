@@ -6,9 +6,18 @@ private String nombre;
 private double precio;
 private int stock;
 
-public Producto(){}
+    /**
+     * Constructor por defecto
+     */
+    public Producto(){}
 
 
+    /**
+     * Contructor de la clase con el nombre,precio y stock del producto
+     * @param nombre
+     * @param precio
+     * @param stock
+     */
     public Producto(String nombre, double precio, int stock) {
         this.nombre = nombre;
         this.precio = precio;
@@ -34,4 +43,32 @@ public Producto(){}
     public int getStock() {
         return stock;
     }
+
+
+    /**
+     * Funcion que suma la cantidad agregada de stock
+     * @param cantidad
+     */
+
+    public int agregarStock(int cantidad){
+
+      stock+=cantidad;
+
+       return stock;
+    }
+
+    /**
+     * Funcion que resta la cantidad de stock establecida
+     * @param cantidad
+     */
+    public int retirarStock(int cantidad){
+
+      stock-=cantidad;
+
+       return stock;
+
+}
+
+
+
 }

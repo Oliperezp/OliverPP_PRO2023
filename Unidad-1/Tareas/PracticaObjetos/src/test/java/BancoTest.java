@@ -9,7 +9,7 @@ public class BancoTest {
     @Test
     public void comprobarIngresoOk(){
         double resultado=banco.agregarSaldo(200);
-        double resultadoOk=500;
+        double resultadoOk=1980;
 
         Assertions.assertEquals(resultado,resultadoOk,"No es el resultado esperado");
 
@@ -25,7 +25,14 @@ public class BancoTest {
 
     }
 
+@Test
+    public void comprobarMostrarSaldoOk(){
 
+        String resultado= banco.mostrarSaldoActual();
+        String resultadoOk="Saldo:" + "1780.0";
+
+        Assertions.assertEquals(resultadoOk,resultado,"No es el resultado esperado");
+    }
 
 
 }

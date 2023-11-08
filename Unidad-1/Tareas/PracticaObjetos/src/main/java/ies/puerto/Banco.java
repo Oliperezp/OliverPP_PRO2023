@@ -56,7 +56,7 @@ private double saldo;
     public double agregarSaldo(double ingreso){
 
 
-     saldo=ingreso+saldo;
+     saldo+=ingreso;
 
      return saldo;
     }
@@ -69,7 +69,7 @@ private double saldo;
      */
   public double retirarSaldo(double retiro){
 
-    saldo=saldo-retiro;
+    saldo-=retiro;
 
     return saldo;
   }
@@ -81,7 +81,7 @@ private double saldo;
      */
   public String mostrarSaldoActual(){
 
-   return "Saldo: " + getSaldo();
+   return "Saldo:" + getSaldo();
   }
 
 
