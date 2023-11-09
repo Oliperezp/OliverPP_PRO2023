@@ -7,7 +7,6 @@ public class Persona {
     private String email;
     private int telefono;
 
-
     /**
      * Constructor por defecto de la clase
      */
@@ -20,7 +19,6 @@ public class Persona {
      */
     public Persona(String nombre){
         this.nombre=nombre;
-
     }
 
     /**
@@ -32,7 +30,6 @@ public class Persona {
 
         this.nombre=nombre;
         this.edad=edad;
-
     }
 
     /**
@@ -45,7 +42,6 @@ public class Persona {
         this.nombre=nombre;
         this.edad=edad;
         this.email=email;
-
 
     }
 
@@ -63,7 +59,6 @@ public class Persona {
         this.telefono=telefono;
 
     }
-
 
     /**
      * Getters/Setters de la clase

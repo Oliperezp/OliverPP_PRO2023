@@ -2,9 +2,9 @@ package ies.puerto.Tienda;
 
 public class Producto {
 
-private String nombre;
-private double precio;
-private int stock;
+protected String nombre;
+protected double precio;
+protected int stock;
 
     /**
      * Constructor por defecto

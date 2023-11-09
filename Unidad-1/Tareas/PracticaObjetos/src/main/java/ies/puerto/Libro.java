@@ -7,7 +7,7 @@ public class Libro {
 
  private String titulo;
  private String autor;
- private int añoPublicacion;
+ private int anioPublicacion;
 
     /**
      * Constructor por defecto
@@ -19,12 +19,12 @@ public class Libro {
      * Constructor de la clase con el titulo, el autor y el año de publicación
      * @param titulo
      * @param autor
-     * @param añoPublicacion
+     * @param anioPublicacion
      */
-    public Libro(String titulo, String autor, int añoPublicacion) {
+    public Libro(String titulo, String autor, int anioPublicacion) {
         this.titulo = titulo;
         this.autor = autor;
-        this.añoPublicacion = añoPublicacion;
+        this.anioPublicacion = anioPublicacion;
     }
 
     public void setAutor(String autor) {
@@ -39,30 +39,21 @@ public class Libro {
         return autor;
     }
 
-    public int getAñoPublicacion() {
-        return añoPublicacion;
+    public int getAnioPublicacion() {
+        return anioPublicacion;
     }
+
+
 
     public String imprimirLibro(){
 
 
-     return "Titulo:" + titulo + "Autor:" + autor + "anioPublicacion:" + añoPublicacion;
+     return "Titulo:" + titulo + "Autor:" + autor + "anioPublicacion:" + anioPublicacion;
 
     }
 
 
-    public static void main(String[] args) {
 
-     Libro libro = new Libro("EL señor de los anillos","Tolkien",1954);
-
-
-        libro.setAutor("Federico");
-
-        libro.imprimirLibro();
-
-
-
-    }
 
 
 }
