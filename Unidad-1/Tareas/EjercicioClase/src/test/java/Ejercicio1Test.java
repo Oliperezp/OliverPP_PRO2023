@@ -6,7 +6,7 @@ public class Ejercicio1Test {
     Ejercicio1 ejercicio1 = new Ejercicio1();
 
     @Test
-    public void comprobarPosicionArray(){
+    public void comprobarPosicionArrayTestOk(){
 
        int resultadoOk=5;
        int resultado = ejercicio1.buscarElemento();
