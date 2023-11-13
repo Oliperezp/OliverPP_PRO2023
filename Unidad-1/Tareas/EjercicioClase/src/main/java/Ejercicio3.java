@@ -14,17 +14,21 @@ public class Ejercicio3 {
             resultado= "Notable";
         } else if (nota >= 9 && nota <= 9.99) {
             resultado="Sobresaliente";
-        } else {
-            resultado= "Matrírcula";
+        } else if (nota == 10) {
+            resultado= "Matrícula";
         }
         return resultado;
     }
 
-    public String calificacionesEstudiante(int nota){
+    public String calificacionesEstudiante(float nota){
 
         String resultado="";
-       switch (nota){
 
+        int enteroNota=(int)nota;
+
+       switch (enteroNota){
+
+            case 0:
             case 1:
             case 2:
             case 3:
@@ -56,10 +60,9 @@ public class Ejercicio3 {
                resultado="Matricula";
                break;
 
-
-
             default:
                 resultado="No es una nota válida";
+                break;
 
         }
 

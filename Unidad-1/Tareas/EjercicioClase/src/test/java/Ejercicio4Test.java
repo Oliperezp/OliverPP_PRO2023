@@ -1,5 +1,6 @@
-import org.junit.Test;
+
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class Ejercicio4Test {
 
@@ -7,15 +8,15 @@ Ejercicio4 ejercicio4 = new Ejercicio4("Manolo",1200);
 
 @Test
 public void comprobarIngresoOkTest(){
-    int resultadoOk=1300;
-    double resultado=ejercicio4.depositarDinero(100);
+    boolean resultadoOk=true;
+    boolean resultado=ejercicio4.depositarDinero(100);
     Assertions.assertEquals(resultadoOk,resultado,"No es el resultado esperado");
 }
 
     @Test
     public void comprobarReintegroOkTest(){
-        int resultadoOk=200;
-        double resultado=ejercicio4.retirarSaldo(1000);
+        boolean resultadoOk=true;
+        boolean resultado=ejercicio4.retirarSaldo(1000);
         Assertions.assertEquals(resultadoOk,resultado,"No es el resultado esperado");
     }
 

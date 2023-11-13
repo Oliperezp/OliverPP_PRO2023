@@ -7,8 +7,8 @@ public class Ejercicio2 {
      */
     public int[] arrayOrdenado(){
 
-        int[] array={2,1,7,6,8,9,4};
-        int[] arrayOrdenado=ordenarArray(array);
+        int[] arrayOrdenar={2,1,7,6,8,9,4};
+        int[] arrayOrdenado=burbuja(arrayOrdenar);
 
         return arrayOrdenado;
     }
@@ -19,27 +19,40 @@ public class Ejercicio2 {
      * @param array
      * @return el array ordenado
      */
-    public int[] ordenarArray(int array[]){
+    public int[] burbuja(int[] array){
 
         int tamanio = array.length;
-        boolean ordenado = false;
+        boolean intercambio = false;
+        int[] ordenado = new int[tamanio];
 
         do{
 
-            for (int i = 1; i < tamanio-1; i++) {
+            intercambio=false;
 
-                if (array[i - 1] > array[i]) {
+            for (int i = 1; i <tamanio-1; i++) {
 
-                    array[i] = array[i - 1];
+                if(array[i-1] > array[i]){
 
-                    ordenado = true;
+                    int temporal=array[i];
+
+                    array[i]=array[i-1];
+
+                    array[i-1]=temporal;
+
+                    intercambio=true;
                 }
-                tamanio -= 1;
 
 
             }
 
-        }while (ordenado==true);
+
+
+
+        }while(intercambio);
+
+
+
+
 
 
       return array;

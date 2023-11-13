@@ -40,17 +40,13 @@ public class Ejercicio4 {
      * @param deposito
      * @return el saldo
      */
-    public double depositarDinero(int deposito){
+    public boolean depositarDinero(int deposito){
 
-        boolean agregarDinero = true;
-
-        if(deposito<=0){
-            agregarDinero=false;
+         if(deposito>0){
+            this.saldo+=deposito;
+            return true;
         }
-
-        saldo+=deposito;
-
-        return saldo;
+        return false;
     }
 
     /**
@@ -58,17 +54,13 @@ public class Ejercicio4 {
      * @param reintegro
      * @return el saldo
      */
-    public double retirarSaldo(int reintegro){
+    public boolean retirarSaldo(int reintegro){
 
-        boolean retiro=true;
-
-        if(reintegro<=0){
-            retiro=false;
+         if((this.saldo - reintegro)>0){
+            this.saldo-=reintegro;
+            return true;
         }
-
-        saldo-=reintegro;
-
-        return saldo;
+         return false;
     }
 
 

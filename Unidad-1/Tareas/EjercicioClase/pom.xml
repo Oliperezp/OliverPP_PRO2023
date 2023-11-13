@@ -30,13 +30,7 @@
             <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+          </dependencies>
     <build>
         <plugins>
             <plugin>
@@ -80,7 +74,7 @@
                             <limits>
                                 <limit>
                                     <counter>LINE</counter>
-                                    <value>COVEREDRATIO</value>
+                                    <value>COVERED-RATIO</value>
                                     <minimum>0.50</minimum>
                                 </limit>
                             </limits>
