@@ -32,11 +32,11 @@ public class Ejercicio9 {
      int[] arrayResultante=new int[tamanioArrayResultante];
 
         for (int i = 0; i <array1.length ; i++) {
-            arrayResultante[i]=i;
+            arrayResultante[i]=array1[i];
         }
 
         for (int i = 0; i <array2.length ; i++) {
-            arrayResultante[i]=i;
+            arrayResultante[array1.length+i]=array2[i];
         }
         return arrayResultante;
     }
