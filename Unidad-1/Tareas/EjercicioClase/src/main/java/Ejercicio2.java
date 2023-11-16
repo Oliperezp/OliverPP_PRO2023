@@ -23,7 +23,6 @@ public class Ejercicio2 {
 
         int tamanio = array.length;
         boolean intercambio = false;
-        int[] ordenado = new int[tamanio];
 
         do{
 
