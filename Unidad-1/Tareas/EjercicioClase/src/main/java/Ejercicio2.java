@@ -22,13 +22,12 @@ public class Ejercicio2 {
     public int[] burbuja(int[] array){
 
         int tamanio = array.length;
+
         boolean intercambio = false;
 
         do{
 
-            intercambio=false;
-
-            for (int i = 1; i <tamanio-1; i++) {
+             for (int i = 1; i <tamanio-1; i++) {
 
                 if(array[i-1] > array[i]){
 

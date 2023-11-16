@@ -25,8 +25,13 @@ public class Ejercicio6 {
         }
 
 
+
         return matrizTraspuesta;
     }
+
+
+
+
 
     /**
      * Funcion que muestra la matriz
