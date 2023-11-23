@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Ejercicio2 {
 
 
@@ -55,5 +57,11 @@ public class Ejercicio2 {
 
       return array;
     }
+
+
+
+
+
+
 
 }
