@@ -12,7 +12,7 @@ public class Ejercicio6 {
 
             if(i%3==0){
 
-                System.out.println("Numero multiplo de tres encontrado"+"Siguiendo con la siguiente iteracion");
+                System.out.println("Numero multiplo de tres encontrado " + " Siguiendo con la siguiente iteracion");
                 continue;
             }
 
@@ -20,10 +20,6 @@ public class Ejercicio6 {
 
         }
 
-
-
-
     }
-
 
 }

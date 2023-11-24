@@ -11,7 +11,7 @@ public class Ejercicio7 {
 
             if(i%2==0){
 
-                System.out.println("Numero par encontrado"+" " +"Siguiendo con la siguiente iteracion");
+                System.out.println("Numero par encontrado"+ " " +"Siguiendo con la siguiente iteracion");
                 continue;
             }
 
@@ -19,12 +19,6 @@ public class Ejercicio7 {
 
         }
 
-
-
-
-
     }
-
-
 
 }

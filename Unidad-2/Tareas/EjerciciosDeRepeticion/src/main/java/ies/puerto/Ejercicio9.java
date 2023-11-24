@@ -11,7 +11,7 @@ public class Ejercicio9 {
 
         for (int num:numeros) {
 
-            if((num==50 || num<50)){
+            if(num<=50){
 
                 System.out.println("Este numero no cumple la condicion");
                 continue;

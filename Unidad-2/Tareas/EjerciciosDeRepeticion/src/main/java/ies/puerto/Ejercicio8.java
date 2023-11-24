@@ -7,6 +7,7 @@ public class Ejercicio8 {
 
     public static void main(String[] args) {
 
+       int suma=0;
         for (int i = 1; i <=10 ; i++) {
 
             if(i%2!=0){
@@ -15,9 +16,12 @@ public class Ejercicio8 {
                 continue;
             }
 
-            System.out.println("Numero par: " + i);
+            suma+=i;
+
 
         }
+
+        System.out.println("Suma de los numeros pares:" + suma);
     }
 
 
