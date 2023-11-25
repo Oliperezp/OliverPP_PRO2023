@@ -13,29 +13,32 @@ public class Ejercicio8 {
 
     public static void main(String[] args) throws Exception {
 
-        double dividendo=solicitarNumero();
-        double divisor=solicitarNumero();
 
-        double resultado=division(dividendo,divisor);
 
-        System.out.println("El resultado de la division es: " + resultado);
+
+            double dividendo = solicitarNumero();
+            double divisor = solicitarNumero();
+
+            double resultado = division(dividendo, divisor);
+
+            System.out.println("El resultado de la division es: " + resultado);
 
     }
-
-
 
     public static double division(double dividendo,double divisor) throws Exception {
 
         double division = 0;
 
-           division = dividendo / divisor;
+        if(divisor==0){
 
-            return division;
+            throw new ArithmeticException("No se puede dividir entre 0");
+        }
+            return  dividendo / divisor;
 
     }
     public static double solicitarNumero() throws Exception{
 
-        int valor;
+        double valor;
         Scanner sc = new Scanner(System.in);
 
         try{
