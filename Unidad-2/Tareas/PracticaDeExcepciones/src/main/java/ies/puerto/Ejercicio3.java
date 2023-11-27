@@ -5,14 +5,16 @@ public class Ejercicio3 {
     public static void main(String[] args){
 
 
-        //Declara un array de 3 elementos e intenta acceder al cuarto elemento. Maneja la excepción ArrayIndexOutOfBoundsException.
-
         int[] array = {1, 4, 5};
         exception(array);
 
     }
 
 
+    /**
+     * Método que recorre un array y lanza una excepcion si sobrepasa del tamaño
+     * @param array
+     */
     public static void exception(int[] array) {
 
         try{

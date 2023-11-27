@@ -7,14 +7,14 @@ public class Ejercicio7 {
 
     //Crea un método que acepte un número y maneja la excepción IllegalArgumentException si el número es negativo.
 
-    public static void main(String[] args)throws Exception {
+    public static void main(String[] args)throws NumeroNegativoException {
 
     int numero=solicitarNumero();
 
-           }
+    }
 
 
-    public static int solicitarNumero() throws Exception{
+    public static int solicitarNumero() throws NumeroNegativoException{
 
              int valor=0;
 
@@ -36,11 +36,11 @@ public class Ejercicio7 {
         return valor;
     }
 
-   public  static void validarNumero(int numero) throws Exception{
+   public static void validarNumero(int numero) throws NumeroNegativoException{
 
         if(numero<0){
 
-         throw new IllegalArgumentException("El numero no puede ser negativo");
+         throw new NumeroNegativoException("El numero no puede ser negativo");
         }
        System.out.println("El numero es: " + numero);
    }
