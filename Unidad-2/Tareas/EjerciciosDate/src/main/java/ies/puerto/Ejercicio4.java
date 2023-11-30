@@ -11,15 +11,15 @@ public class Ejercicio4 {
     public static void main(String[] args) {
 
         Calendar calendar = Calendar.getInstance();
+        Date fechaActual = calendar.getTime();
 
 
+        calendar.add(calendar.DAY_OF_MONTH,10);
 
-        int anio = calendar.get(Calendar.YEAR);
-        int mes = calendar.get(Calendar.MONTH);
-        int dia = calendar.get(Calendar.DAY_OF_MONTH);
+        Date nuevaFecha = calendar.getTime();
 
 
-        System.out.println("Fecha Con 10 dias más :" + dia + "-" + mes + "-" + anio );
+        System.out.println("Fecha Con 10 dias más :" + nuevaFecha );
 
 
 
