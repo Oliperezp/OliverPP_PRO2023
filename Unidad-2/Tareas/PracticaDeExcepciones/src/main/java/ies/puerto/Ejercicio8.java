@@ -14,18 +14,15 @@ public class Ejercicio8 {
     public static void main(String[] args) throws Exception {
 
 
-
-
-            double dividendo = solicitarNumero();
-            double divisor = solicitarNumero();
+            float dividendo = solicitarNumero();
+            float divisor = solicitarNumero();
 
             double resultado = division(dividendo, divisor);
 
             System.out.println("El resultado de la division es: " + resultado);
-
     }
 
-    public static double division(double dividendo,double divisor) throws Exception {
+    public static float division(float dividendo,float divisor) throws Exception {
 
         double division = 0;
 
@@ -36,25 +33,20 @@ public class Ejercicio8 {
             return  dividendo / divisor;
 
     }
-    public static double solicitarNumero() throws Exception{
+    public static float solicitarNumero() throws Exception{
 
-        double valor;
+        float valor;
         Scanner sc = new Scanner(System.in);
 
         try{
             System.out.println("Introduzca un valor: ");
-            valor=sc.nextInt();
+            valor=sc.nextFloat();
 
 
         }catch (InputMismatchException exception){
 
             String mensajeError="Error, no has introducido un numero, sino una cadena de texto";
-            throw new Exception(mensajeError);
-
-        }catch (ArithmeticException exception){
-
-            String mensajeError="Error, no se puede dividir entre 0" + exception.getMessage();
-            throw new Exception(mensajeError);
+            throw new InputMismatchException(mensajeError);
 
         }
 
