@@ -11,7 +11,6 @@ public class Ejercicio4 {
     public static void main(String[] args) {
 
         Calendar calendar = Calendar.getInstance();
-        Date fechaActual = calendar.getTime();
 
 
         calendar.add(calendar.DAY_OF_MONTH,10);

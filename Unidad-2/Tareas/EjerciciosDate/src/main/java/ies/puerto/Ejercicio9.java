@@ -11,17 +11,15 @@ public class Ejercicio9 {
 
         Calendar calendar = Calendar.getInstance();
 
-       int dia = calendar.get(calendar.DAY_OF_MONTH);
+        int mes = calendar.getActualMinimum(calendar.DAY_OF_MONTH);
 
-       calendar.set(calendar.DAY_OF_MONTH,1);
+        System.out.println("El primer dia del mes es :" + mes);
 
-       int primerDia = calendar.get(calendar.DAY_OF_MONTH);
-
-
-        System.out.println(primerDia);
 
 
     }
+
+
 
 
 }

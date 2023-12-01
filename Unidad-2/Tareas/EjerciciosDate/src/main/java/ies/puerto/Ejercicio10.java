@@ -13,18 +13,17 @@ public class Ejercicio10 {
 
         Calendar calendar = Calendar.getInstance();
 
-        //calendar.set(calendar.DAY_OF_WEEK,1);
+        //calendar.set(calendar.DAY_OF_WEEK,7);
 
         int diaDeLaSemana = calendar.get(Calendar.DAY_OF_WEEK);
 
-        System.out.println(diaDeLaSemana);
 
         if (diaDeLaSemana == Calendar.SATURDAY) {
             System.out.println("El día es Sabado ");
-        } else if(diaDeLaSemana == Calendar.SUNDAY) {
+        }else if(diaDeLaSemana == Calendar.SUNDAY) {
             System.out.println("El día es Domingo");
         }else{
-            System.out.println("Lo siento, aun no es fin de semana");
+            System.out.println("Lo siento,no es fin de semana");
         }
     }
 

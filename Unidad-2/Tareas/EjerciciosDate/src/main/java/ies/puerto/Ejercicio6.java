@@ -15,7 +15,7 @@ public class Ejercicio6 {
         Calendar calendar = Calendar.getInstance();
 
         Date fechaActual = new Date();
-        Date otraFecha = new Date();
+        //Date otraFecha = new Date();
 
         calendar.add(calendar.DAY_OF_MONTH,5);
 
