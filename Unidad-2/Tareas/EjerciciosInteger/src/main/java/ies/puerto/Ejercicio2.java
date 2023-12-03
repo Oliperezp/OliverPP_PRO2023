@@ -21,6 +21,11 @@ public class Ejercicio2 {
 
     }
 
+    /**
+     * Funcion que transforma un numero entero a texto
+     * @param numero
+     * @return el numero en modo texto
+     */
     public static String convertirNumeroIntStr(int numero){
 
         String numeroModificado = Integer.toString(numero);
@@ -29,7 +34,11 @@ public class Ejercicio2 {
         return numeroModificado;
     }
 
-
+    /**
+     * Funcion que transforma un texto a entero
+     * @param numero
+     * @return el numero en entero
+     */
     public  static int convertirNumeroStrInt(String numero){
 
         int numeroModificado=Integer.parseInt(numero);

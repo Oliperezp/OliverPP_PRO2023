@@ -16,6 +16,12 @@ public class Ejercicio4 {
 
     }
 
+    /**
+     * Funcion que suma dos numeros con el metodo sum de Integer
+     * @param numero1
+     * @param numero2
+     * @return la suma de los dos numeros
+     */
     public static int suma(int numero1,int numero2){
 
         int resultado=Integer.sum(numero1,numero2);
