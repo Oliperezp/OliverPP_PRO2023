@@ -20,16 +20,11 @@ public class Ejercicio8 {
 
             System.out.println("El factorial del numero " + numero + " es: " + resultado);
 
-
-
         }catch (InputMismatchException exception){
             System.out.println("No se ha introducido un numero sino una cadena de texto");
-
-
         }
 
     }
-
 
     public static int calcularFactorial(int numero){
 
@@ -39,7 +34,6 @@ public class Ejercicio8 {
 
             factorial*=i;  ;
         }
-
 
         return factorial;
     }

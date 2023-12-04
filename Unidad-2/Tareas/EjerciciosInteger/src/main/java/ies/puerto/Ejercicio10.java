@@ -7,7 +7,7 @@ public class Ejercicio10 {
         //Escribe un programa que verifique si una cadena de texto puede convertirse en un
         // número entero utilizando métodos de la clase Integer
 
-        String cadenaTexto="1ers5";
+        String cadenaTexto="1453s";
 
         try{
 
