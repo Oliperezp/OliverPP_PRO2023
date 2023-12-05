@@ -11,18 +11,24 @@ public class Ejercicio4 {
         // (palabras concatenadas sin espacios) en una cadena.
 
 
-        String palabraCamelCase="sumarTodo";
+        String palabraCamelCase = "sumarTodosLosNumeros";
 
 
-        String regex = "\\w+[A-Z]\\w";
+        String regex = "[a-z]+|[A-Z][a-z]*";
 
         Pattern pattern = Pattern.compile(regex);
         Matcher coincide = pattern.matcher(palabraCamelCase);
 
+         int contadorDePalabras = 0;
+
+         while (coincide.find()) {
+
+            contadorDePalabras++;
 
 
+        }
 
+
+        System.out.println("El numero de palabras camelCase son:" + contadorDePalabras);
     }
-
-
 }
