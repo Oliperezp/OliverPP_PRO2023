@@ -18,6 +18,11 @@ public class Ejercicio3 {
 
     }
 
+    /**
+     * Funcion que suma cada digito de un numero y muestra el resultado
+     * @param numero
+     * @return la suma de los digitos del numero
+     */
     public static int sumarDigitos(int numero){
 
         int suma = 0;
