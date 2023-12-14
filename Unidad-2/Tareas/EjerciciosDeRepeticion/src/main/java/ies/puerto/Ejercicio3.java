@@ -12,7 +12,7 @@ public class Ejercicio3 {
 
             if(numero==7){
 
-                System.out.println("Encontrado el numero" + numero);
+                System.out.println("Encontrado el numero " + numero);
                 break;
             }
 

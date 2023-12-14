@@ -19,6 +19,7 @@ public class Ejercicio7 {
 
             String resultado=Integer.toBinaryString(numero);
 
+
             System.out.println("El numero " + numero + " en binario es: " + resultado);
 
 

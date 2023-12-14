@@ -30,7 +30,6 @@ public class Ejercicio2 {
 
         String numeroModificado = Integer.toString(numero);
 
-
         return numeroModificado;
     }
 

@@ -6,7 +6,7 @@ public class Ejercicio8 {
 
         //Crea un programa que verifique si una cadena de texto comienza o termina con una subcadena específica.
 
-         String texto = "Hola mundo";
+         String texto = "Hola Mundo";
 
          boolean inicio = texto.startsWith("Hola");
          boolean fin = texto.endsWith("Manolo");

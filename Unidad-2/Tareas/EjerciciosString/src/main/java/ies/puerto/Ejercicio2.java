@@ -4,6 +4,8 @@ public class Ejercicio2 {
 
     public static void main(String[] args) {
 
+
+
         String texto1 = "Soy programador";
 
         String texto2 = "Creo que no";
