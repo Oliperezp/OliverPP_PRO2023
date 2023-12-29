@@ -35,9 +35,9 @@ public class Ejercicio71 {
              if(numero<1 || numero>10) {
                  System.out.println("No es correcto, ingresa un numero entre 1 y 10: ");
              }else if (numero<aleatorio) {
-                 System.out.println("Demasiado bajo, sigue subiendo: ");
+                 System.out.println("Demasiado bajo: ");
              }else if(numero>aleatorio){
-                 System.out.println("Demasiado alto, baja un poco: ");
+                 System.out.println("Demasiado alto: ");
              }
 
 
