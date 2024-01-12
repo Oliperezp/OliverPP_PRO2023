@@ -15,7 +15,7 @@ static Motocicleta moto;
         coche=new Coche("Ford","Focus",20400,5);
         System.out.println(coche.toString());
         System.out.println();
-        moto=new Motocicleta("Kawasaki","Ninja",30000,"Winsor");
+        moto=new Motocicleta("Kawasaki","Ninja",30000,"XL");
         System.out.println(moto.toString());
 
 

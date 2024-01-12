@@ -12,6 +12,14 @@ public class Coche extends Vehiculo {
 
     }
 
+    public int getNumeroPlazas() {
+        return numeroPlazas;
+    }
+
+    public void setNumeroPlazas(int numeroPlazas) {
+        this.numeroPlazas = numeroPlazas;
+    }
+
     @Override
     public String toString(){
         return "Coche es de la marca: " + getMarca() + ",el modelo: " + getModelo() + ",tiene un precio de: " + getPrecio()

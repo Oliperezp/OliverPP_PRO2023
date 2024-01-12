@@ -11,7 +11,7 @@ public class AppPersona {
 
     public static void main(String[] args) throws ValidacionException {
 
-        persona=new Persona("Paco",14,"45674345Y");
+        persona=new Persona("Paco",14,"78718263G");
         System.out.println(persona.toString());
         System.out.println(persona.validarDni(persona.getDni()));
         System.out.println(persona.validarNombre(persona.getNombre()));
