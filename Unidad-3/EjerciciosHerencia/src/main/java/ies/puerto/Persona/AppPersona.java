@@ -25,7 +25,7 @@ public class AppPersona {
 
         System.out.println();
 
-        estudiante=new Estudiante("Manolo",30,"5467894y","1ºDAM",7);
+        estudiante=new Estudiante("Manolo",30,"54678945y","1ºDAM",7);
         System.out.println(estudiante.toString());
         System.out.println(estudiante.validarDni(estudiante.getDni()));
         System.out.println(estudiante.mayorEdad(estudiante.getEdad()));
