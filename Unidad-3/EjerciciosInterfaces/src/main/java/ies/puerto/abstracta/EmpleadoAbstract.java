@@ -2,6 +2,8 @@ package ies.puerto.abstracta;
 
 import ies.puerto.interfaz.ITrabajador;
 
+import java.util.Calendar;
+
 public  abstract class EmpleadoAbstract extends PersonaAbstract implements ITrabajador {
 
 private float salario;

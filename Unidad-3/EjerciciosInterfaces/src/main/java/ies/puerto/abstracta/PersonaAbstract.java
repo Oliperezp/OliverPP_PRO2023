@@ -37,9 +37,19 @@ public  abstract class PersonaAbstract {
     }
 
 
+/*
  public int anios(){
-  return 10;
+
+     Calendar hoy = Calendar.getInstance();
+     SimpleDateFormat formato=new SimpleDateFormat("dd/MM/yyyy");
+     formato.format(hoy);
+
+     int diferenciaAnio = hoy.get(Calendar.YEAR) - fechaNacimiento.get(Calendar.YEAR);
+
+  return diferenciaAnio;
  }
+
+ */
 
 
     }

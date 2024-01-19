@@ -23,7 +23,7 @@ static PersonaAbstract alumno1;
 
         System.out.println();
 
-        alumno1=new Alumno("Manolo","23/10/2006","1ºESO");
+        alumno1=new Alumno("Manolo","22/10/1987","1ºESO");
         System.out.println(alumno1.toString());
         System.out.println("Tengo:" + alumno1.anios() + " años");
 
