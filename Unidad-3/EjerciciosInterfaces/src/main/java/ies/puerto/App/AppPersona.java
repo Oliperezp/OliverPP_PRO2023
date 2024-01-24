@@ -12,7 +12,7 @@ static Profesor profesor1;
 static PersonaAbstract alumno1;
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         profesor1=new Profesor("Paco","24/10/1985",2000f,"Profesor","Matematicas");
 

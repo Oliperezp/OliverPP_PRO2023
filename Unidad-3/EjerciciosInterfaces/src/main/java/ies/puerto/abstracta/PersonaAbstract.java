@@ -37,19 +37,30 @@ public  abstract class PersonaAbstract {
     }
 
 
-/*
- public int anios(){
+    public int anios() throws Exception {
+        SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy");
 
-     Calendar hoy = Calendar.getInstance();
-     SimpleDateFormat formato=new SimpleDateFormat("dd/MM/yyyy");
-     formato.format(hoy);
+        try {
 
-     int diferenciaAnio = hoy.get(Calendar.YEAR) - fechaNacimiento.get(Calendar.YEAR);
+            Date fechaNac = formatoFecha.parse(fechaNacimiento);
+            Calendar calFechaNac = Calendar.getInstance();
+            calFechaNac.setTime(fechaNac);
 
-  return diferenciaAnio;
- }
+            Calendar hoy = Calendar.getInstance();
 
- */
+
+            int diferenciaAnio = hoy.get(Calendar.YEAR) - calFechaNac.get(Calendar.YEAR);
+
+            return diferenciaAnio;
+
+        } catch (ParseException e) {
+
+            throw new Exception("No es una fecha valida");
+
+        }
+    }
+
+
 
 
     }

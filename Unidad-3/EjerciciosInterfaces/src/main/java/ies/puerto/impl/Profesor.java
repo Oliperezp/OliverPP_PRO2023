@@ -2,6 +2,8 @@ package ies.puerto.impl;
 
 import ies.puerto.abstracta.EmpleadoAbstract;
 
+import java.text.ParseException;
+
 public class Profesor extends EmpleadoAbstract {
 
     private String especialidad;
@@ -25,7 +27,11 @@ public class Profesor extends EmpleadoAbstract {
 
     @Override
     public String toString() {
-        return "Nombre del Profesor: " + getNombre() + " FechaNacimiento: " + getFechaNacimiento() + " Años: "
-                + anios() + " Salario: " + calcularSalario() + " Trabajo: " + getTrabajo()+" Especialidad: " + especialidad;
+        try {
+            return "Nombre del Profesor: " + getNombre() + " FechaNacimiento: " + getFechaNacimiento() + " Años: "
+                    + anios() + " Salario: " + calcularSalario() + " Trabajo: " + getTrabajo()+" Especialidad: " + especialidad;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }

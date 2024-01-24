@@ -21,8 +21,12 @@ public class Alumno extends PersonaAbstract {
 
  @Override
     public String toString(){
-       return "Nombre: " + getNombre() + " Edad: " + anios() + " Fecha Naciminento: " + getFechaNacimiento() + " Nivel: " +
-            nivel;
+     try {
+         return "Nombre: " + getNombre() + " Edad: " + anios() + " Fecha Naciminento: " + getFechaNacimiento() + " Nivel: " +
+              nivel;
+     } catch (Exception e) {
+         throw new RuntimeException(e);
+     }
  }
 
 
