@@ -4,10 +4,9 @@ import java.util.ArrayList;
 
 public class CompararArrayList {
 
-    public static boolean numerosIguales(ArrayList<Integer> numeros1, ArrayList<Integer> numeros2) {
-
-        for (int numero : numeros1) {
-            if (numeros2.contains(numero)) {
+    public static boolean numerosIguales(ArrayList<Integer> lista1, ArrayList<Integer> lista2) {
+        for (Integer numero : lista1) {
+            if (lista2.contains(numero)) {
                 return true;
             }
         }
