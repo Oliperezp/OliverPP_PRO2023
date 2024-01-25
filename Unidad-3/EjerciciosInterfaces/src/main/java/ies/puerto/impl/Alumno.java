@@ -19,6 +19,7 @@ public class Alumno extends PersonaAbstract {
        return "Voy a Estudiar";
    }
 
+   /*
  @Override
     public String toString(){
      try {
@@ -29,7 +30,7 @@ public class Alumno extends PersonaAbstract {
      }
  }
 
-
+*/
 
 
 
