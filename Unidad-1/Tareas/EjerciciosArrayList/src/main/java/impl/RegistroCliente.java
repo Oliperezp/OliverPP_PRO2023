@@ -33,11 +33,21 @@ public class RegistroCliente {
     }
 
     public void transaccion(String numeroCLiente, float cantidad) {
-       // Cliente cliente = new Cliente(numeroCLiente);
-        //if (buscarCliente(cliente) != null) {
+        Cliente clienteActualizar = new Cliente(numeroCLiente);
 
+        if(!clientes.contains(clienteActualizar)){
+           return;
         }
-    }
+        int posicionCliente=clientes.indexOf(clienteActualizar);
 
+        clienteActualizar=buscarCliente(clienteActualizar);
+
+        clienteActualizar.actualizarSaldo(cantidad);
+
+        clientes.add(posicionCliente,clienteActualizar);
+        clientes.set(posicionCliente,clienteActualizar);
+
+    }
+}
 
 

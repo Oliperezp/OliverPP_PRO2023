@@ -11,6 +11,10 @@ public class Cliente {
 
     public Cliente(){}
 
+    public Cliente(String numero) {
+        this.numero = numero;
+    }
+
     public Cliente(String nombre, String numero, float saldo) {
         this.nombre = nombre;
         this.numero = numero;
@@ -32,6 +36,11 @@ public class Cliente {
     public void setSaldo(float saldo) {
         this.saldo = saldo;
     }
+
+    public void actualizarSaldo(float cantidad){
+        this.saldo += cantidad;
+    }
+
 
     @Override
     public boolean equals(Object o) {

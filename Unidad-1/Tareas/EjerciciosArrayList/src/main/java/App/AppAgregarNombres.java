@@ -1,6 +1,7 @@
 package App;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -27,11 +28,14 @@ public class AppAgregarNombres {
 
             if (!nombre.equals("salir")) {
                 nombres.add(nombre);
+
             } else {
                 opcion = "salir";
             }
 
         } while (!opcion.equals("salir"));
+
+
 
 
         System.out.println("Nombres :" + nombres);
