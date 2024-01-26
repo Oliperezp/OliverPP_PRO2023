@@ -6,43 +6,38 @@ import java.util.List;
 public class ElementosDuplicados {
 
     //Crea un programa que elimine los elementos duplicados de un ArrayList de cadenas y muestre la lista resultante.
-    static List<String> palabras;
+    static List<String> nombres;
 
 
     public static void main(String[] args) {
 
-        palabras=new ArrayList<>();
+        nombres =new ArrayList<>();
 
-        palabras.add("Tamara");
-        palabras.add("Chimuelo");
-        palabras.add("Ambrusio");
-        palabras.add("Ambrusio");
-        palabras.add("Chimuelo");
+        nombres.add("Tamara");
+        nombres.add("Chimuelo");
+        nombres.add("Ambrusio");
+        nombres.add("Ambrusio");
+        nombres.add("Chimuelo");
 
-        System.out.println("Sin eliminar:" + palabras);
-
-
-        eliminarDuplicados();
-
-        System.out.println("Eliminando:" +palabras);
-
-
-
+        System.out.println("Sin eliminar:" + nombres);
+        System.out.println("Sin duplicados:" + eliminarCadenasDuplicadas(nombres));
     }
 
 
-    public static void eliminarDuplicados() {
-        List<String> sinDuplicados = new ArrayList<>();
+    public static List<String> eliminarCadenasDuplicadas(List<String> lista){
+        List<String> resultado = new ArrayList<>();
 
-        for (String palabra : palabras) {
-            if (!sinDuplicados.contains(palabra)) {
-                sinDuplicados.add(palabra);
+        for (String palabra:lista) {
+            if(!resultado.contains(palabra)){
+                resultado.add(palabra);
             }
         }
 
-        palabras.clear();
-        palabras.addAll(sinDuplicados);
+        return resultado;
     }
+
+
+
 
 
 }

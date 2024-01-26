@@ -1,10 +1,10 @@
-package impl;
+package App;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class AgregarNombres {
+public class AppAgregarNombres {
 
 //Crea un programa que lea una lista de nombres desde el teclado y
 // los almacene en un ArrayList. Luego, ordena la lista alfabéticamente e imprímela. a la lista.

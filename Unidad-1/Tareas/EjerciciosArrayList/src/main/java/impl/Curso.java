@@ -13,19 +13,23 @@ public class Curso {
     }
 
     public List<Alumno> getAlumnos() {
+
         return alumnos;
     }
 
     public void setAlumnos(List<Alumno> alumnos) {
+
         this.alumnos = alumnos;
     }
 
     public void agregarAlumno(Alumno alumno) {
+
         alumnos.add(alumno);
     }
 
 
     public void eliminarAlumno(Alumno alumno) {
+
         alumnos.remove(alumno);
     }
 

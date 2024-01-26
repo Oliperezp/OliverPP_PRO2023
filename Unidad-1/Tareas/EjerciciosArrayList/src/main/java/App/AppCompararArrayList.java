@@ -1,16 +1,18 @@
 package App;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static impl.CompararArrayList.numerosIguales;
 
 public class AppCompararArrayList {
 
-
+static List<Integer> numeros1;
+static List<Integer> numeros2;
     public static void main(String[] args) {
-        ArrayList<Integer> numeros1 = new ArrayList<>(List.of(1, 2, 3, 4, 5));
-        ArrayList<Integer> numeros2 = new ArrayList<>(List.of(5, 6, 7, 8, 9));
+         numeros1 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
+         numeros2 = new ArrayList<>(Arrays.asList(10, 6, 7, 8, 9));
 
         boolean numerosIguales = numerosIguales(numeros1, numeros2);
 
