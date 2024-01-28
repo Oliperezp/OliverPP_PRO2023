@@ -1,10 +1,10 @@
-package App;
+package ies.puerto.parte1.App;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static impl.CompararArrayList.numerosIguales;
+import static ies.puerto.parte1.impl.CompararArrayList.numerosIguales;
 
 public class AppCompararArrayList {
 

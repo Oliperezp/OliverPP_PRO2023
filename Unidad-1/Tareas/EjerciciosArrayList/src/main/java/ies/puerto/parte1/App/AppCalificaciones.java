@@ -1,7 +1,7 @@
-package App;
+package ies.puerto.parte1.App;
 
-import impl.Alumno;
-import impl.Curso;
+import ies.puerto.parte1.impl.Alumno;
+import ies.puerto.parte1.impl.Curso;
 
 import java.util.ArrayList;
 import java.util.List;

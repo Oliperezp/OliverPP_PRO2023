@@ -1,9 +1,8 @@
-package App;
+package ies.puerto.parte1.App;
 
-import impl.OperacionesArrayList;
+import ies.puerto.parte1.impl.OperacionesArrayList;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class AppArrayCadenas {
 

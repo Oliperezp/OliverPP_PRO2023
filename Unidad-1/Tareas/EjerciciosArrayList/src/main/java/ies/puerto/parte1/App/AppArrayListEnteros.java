@@ -1,12 +1,10 @@
-package App;
-
-import impl.OperacionesArrayList;
+package ies.puerto.parte1.App;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static impl.OperacionesArrayList.esPar;
-import static impl.OperacionesArrayList.mayoresQueDiez;
+import static ies.puerto.parte1.impl.OperacionesArrayList.esPar;
+import static ies.puerto.parte1.impl.OperacionesArrayList.mayoresQueDiez;
 
 public class AppArrayListEnteros {
 
