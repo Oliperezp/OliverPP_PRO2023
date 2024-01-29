@@ -62,6 +62,25 @@ public float notaMaxima(){
       return  resultado;
 }
 
+    public float notaMinima(){
+
+        float resultado=0f;
+
+        if(notas.isEmpty()){
+            return resultado;
+        }
+
+        for (Nota nota :notas){
+            if(nota.getValor()<resultado){
+                resultado=nota.getValor();
+            }
+        }
+
+        return  resultado;
+    }
+
+
+
 @Override
 public String toString(){
     try {

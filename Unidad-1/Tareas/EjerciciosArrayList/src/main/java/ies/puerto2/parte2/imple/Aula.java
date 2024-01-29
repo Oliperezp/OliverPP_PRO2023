@@ -74,13 +74,8 @@ public class Aula {
         return sumaTotal / alumnos.size();
         }
 
-    public float salarioMinimo(){
 
 
-        float salarioMinimo=Float.MIN_VALUE;
-
-        return salarioMinimo;
-    }
 
 
     }

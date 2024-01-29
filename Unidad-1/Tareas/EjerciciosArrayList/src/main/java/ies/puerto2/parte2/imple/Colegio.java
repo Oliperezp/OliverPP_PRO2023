@@ -11,7 +11,8 @@ public class Colegio {
     private List<Aula> aulas;
 
 
-    public Colegio(){}
+    public Colegio() {
+    }
 
     public Colegio(String nombreColegio, String direccion, String ubicacion) {
         this.nombreColegio = nombreColegio;
@@ -78,19 +79,6 @@ public class Colegio {
         return Objects.hash(nombreColegio, direccion, ubicacion, aulas);
     }
 
-    public float obtenerNotaMaxima() {
-
-        float notaMaxima = Float.MAX_VALUE;
-
-        for (Aula notas : aulas) {
-            if (notas.equals(notaMaxima)) {
-                return notaMaxima;
-            }
-        }
-       return 0;
-    }
-
-
 
 
     public float calcularPromedioCalificacionesColegio() {
@@ -100,15 +88,68 @@ public class Colegio {
 
         float sumaTotal = 0;
         for (Aula notaAulas : aulas) {
-          sumaTotal += notaAulas.calcularPromedioCalificacionesAula();
+            sumaTotal += notaAulas.calcularPromedioCalificacionesAula();
 
-            }
-        return sumaTotal / aulas.size();
         }
+        return sumaTotal / aulas.size();
+    }
+
+    public float salarioMinimo() {
+
+        float resultado = 0f;
+        if(aulas.isEmpty()){
+            return resultado;
+        }
+
+        for (Aula profesoresAula: aulas) {
+
+
+            if(profesoresAula.getProfesor().getSalario()<resultado){
+                resultado=profesoresAula.getProfesor().getSalario();
+            }
+        }
+
+      return resultado;
+    }
+
+    public float salarioMaximo() {
+
+        float resultado = 0f;
+        if(aulas.isEmpty()){
+            return resultado;
+        }
+
+        for (Aula profesoresAula: aulas) {
+
+
+            if(profesoresAula.getProfesor().getSalario()>resultado){
+                resultado=profesoresAula.getProfesor().getSalario();
+            }
+        }
+
+        return resultado;
+    }
+
+    public float salarioMedio() {
+
+        float resultado = 0f;
+        float suma=0f;
+
+        if(aulas.isEmpty()){
+            return resultado;
+        }
+
+        for (Aula profesoresAula: aulas) {
+
+            suma+=profesoresAula.getProfesor().getSalario();
+
+        }
+
+        return suma/aulas.size();
+    }
 
 
 }
-
 
 
 
