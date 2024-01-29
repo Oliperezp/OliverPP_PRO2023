@@ -74,6 +74,22 @@ public class Aula {
         return sumaTotal / alumnos.size();
         }
 
+    public int edadMediaAlumnos() throws Exception {
+
+        int suma=0;
+        if(alumnos.isEmpty()){
+            return suma;
+        }
+
+        for (Alumno edadAlumnos: alumnos) {
+
+            suma+=edadAlumnos.anios(edadAlumnos.getFechaNacimiento());
+
+        }
+
+        return suma/alumnos.size();
+    }
+
 
 
 

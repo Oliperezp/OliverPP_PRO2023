@@ -148,6 +148,22 @@ public class Colegio {
         return suma/aulas.size();
     }
 
+    public int edadMediaProfesores() throws Exception {
+
+        int suma=0;
+        if(aulas.isEmpty()){
+            return suma;
+        }
+
+        for (Aula edadProfesores: aulas) {
+
+         suma+=edadProfesores.getProfesor().anios(edadProfesores.getProfesor().getFechaNacimiento());
+
+        }
+
+      return suma/aulas.size();
+    }
+
 
 }
 

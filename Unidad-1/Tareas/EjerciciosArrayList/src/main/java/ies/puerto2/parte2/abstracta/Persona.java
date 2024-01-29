@@ -88,20 +88,9 @@ public abstract class Persona {
     }
 
 
-    public void añadirAnios(String fechaNacimiento,List<Integer> anios) throws Exception {
-        anios.add(anios(fechaNacimiento));
-    }
 
-    public int edadMedia(List<Integer> anios){
 
-        int suma=0;
-        for (Integer listaAnios:anios) {
 
-            suma+=listaAnios;
-        }
-
-        return suma/anios.size();
-    }
 
     @Override
     public String toString() {
