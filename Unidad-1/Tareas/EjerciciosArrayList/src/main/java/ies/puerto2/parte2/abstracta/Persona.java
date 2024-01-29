@@ -103,7 +103,12 @@ public abstract class Persona {
         return suma/anios.size();
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nombre='" + nombre + '\'' +
+                ", dni='" + dni + '\'' +
+                ", fechaNacimiento='" + fechaNacimiento + '\'' +
+                '}';
+    }
 }

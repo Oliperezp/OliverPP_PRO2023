@@ -90,7 +90,9 @@ public class Colegio {
        return 0;
     }
 
-    /*
+
+
+
     public float calcularPromedioCalificacionesColegio() {
         if (aulas.isEmpty()) {
             return 0;
@@ -98,15 +100,16 @@ public class Colegio {
 
         float sumaTotal = 0;
         for (Aula notaAulas : aulas) {
-            ArrayList<Float> notasColegio = ;
-            for (float calificacion : notasColegio) {
-                sumaTotal += calificacion;
+          sumaTotal += notaAulas.calcularPromedioCalificacionesAula();
 
             }
+        return sumaTotal / aulas.size();
         }
 
-        return sumaTotal / aulas.size();
-    }
-*/
 
 }
+
+
+
+
+

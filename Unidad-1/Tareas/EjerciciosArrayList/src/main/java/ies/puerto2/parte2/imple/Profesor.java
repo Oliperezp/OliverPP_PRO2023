@@ -46,8 +46,9 @@ public class Profesor extends Empleado {
    public String toString(){
 
        try {
-           return "Dni: " + getDni() + "Nombre: " + getNombreTrabajador() + "Fecha Nacimiento: " + getFechaNacimiento() +
-                   "Salario: " + getSalario() + "Edad: " + anios(getFechaNacimiento());
+           return "Dni: " + getDni() + "Nombre: " + getNombre() + "Fecha Nacimiento: " + getFechaNacimiento() +
+                   "Salario: " + getSalario() + "Edad: " + anios(getFechaNacimiento() + "Especialidad:" +
+                   especialidad);
        } catch (Exception e) {
            throw new RuntimeException(e);
        }

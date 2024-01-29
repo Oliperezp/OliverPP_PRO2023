@@ -68,15 +68,22 @@ public class Aula {
         }
         float sumaTotal = 0;
         for (Alumno alumno : alumnos) {
-            ArrayList<Float> notas = alumno.getNotas();
-            for (float calificacion : notas) {
-                sumaTotal += calificacion;
+            sumaTotal += alumno.calcularPromedioCalificacionesAlumno();
 
             }
+        return sumaTotal / alumnos.size();
         }
 
-        return sumaTotal / alumnos.size();
+    public float salarioMinimo(){
+
+
+        float salarioMinimo=Float.MIN_VALUE;
+
+        return salarioMinimo;
     }
-}
+
+
+    }
+
 
 

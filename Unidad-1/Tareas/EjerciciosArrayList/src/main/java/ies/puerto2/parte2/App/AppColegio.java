@@ -8,7 +8,8 @@ import ies.puerto2.parte2.imple.Colegio;
 import java.util.ArrayList;
 import java.util.List;
 
-        public class AppnotaMaxima {
+        public class AppColegio {
+
 
             static Persona alumno;
             static Aula aula;
@@ -26,8 +27,8 @@ import java.util.List;
         Alumno alumno5 = new Alumno("Lucia","Mendez", new ArrayList<>(List.of(9f,9.5f,7.5f)));
         //Aula aula1 = new Aula(List.of(alumno1,alumno2,alumno3,alumno4,alumno5));
 
-        System.out.println("La nota Maxima Aula: " );
-        System.out.println("Nota maxima en el colegio: " );
+        System.out.println("La nota Maxima Aula: " + aula.calcularPromedioCalificacionesAula() );
+        System.out.println("Nota maxima en el colegio: " + colegio.calcularPromedioCalificacionesColegio());
 
     }
 
