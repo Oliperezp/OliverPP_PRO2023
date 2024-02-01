@@ -1,17 +1,22 @@
 package ies.puerto.Imple;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 public class Concesionario {
 
     private HashSet<Coche> coches;
     private ArrayList<Motocicleta> motos;
 
+    private Map<String,Camion> camionMap;
+    private Map<String,Bicicleta> bicicletaMap;
+
+
+
     public Concesionario(){
         coches=new HashSet<>();
         motos=new ArrayList<>();
+        bicicletaMap=new HashMap<>();
+        camionMap=new HashMap<>();
 
     }
 
@@ -147,6 +152,26 @@ public class Concesionario {
 
         return sumaTotal/tamanio;
     }
+
+
+    public boolean addCamion(Camion camion){
+        if(!camionMap.containsKey(camion)){
+             camionMap.put(camion.getMatricula(),camion);
+        }
+        return true;
+    }
+    public boolean removeCamion(Camion camion){
+        if(camionMap.containsKey(camion)){
+            camionMap.remove(camion.getMatricula(),camion);
+        }
+        return true;
+    }
+
+    public Camion obtenerCamion(Camion camion){
+
+        return camion;
+    }
+
 
 
 

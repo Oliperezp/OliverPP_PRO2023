@@ -15,6 +15,7 @@ public Motocicleta(){}
 
     @Override
     public int velocidadMaxima() {
-        return VELOCIDAD_MAXIMA;
+
+    return VELOCIDAD_MAXIMA;
     }
 }

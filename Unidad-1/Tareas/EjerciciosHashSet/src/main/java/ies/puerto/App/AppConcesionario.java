@@ -10,7 +10,6 @@ public class AppConcesionario {
 
     static Concesionario concesionario;
     static Coche coche;
-
     static Motocicleta moto;
 
 
