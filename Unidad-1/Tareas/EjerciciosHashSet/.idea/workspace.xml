@@ -5,42 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfaed977-f5f0-4f39-9056-a2165be56c7d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto/parte1/App/AppAgregarNombres.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto/parte1/App/AppArrayCadenas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto/parte1/App/AppArrayListEnteros.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto/parte1/App/AppCalificaciones.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto/parte1/App/AppCompararArrayList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto/parte1/impl/Alumno.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto/parte1/impl/Cliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto/parte1/impl/CompararArrayList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto/parte1/impl/Curso.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto/parte1/impl/ElementosDuplicados.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto/parte1/impl/OperacionesArrayList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto/parte1/impl/RegistroCliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto2/parte2/App/AppColegio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto2/parte2/abstracta/Empleado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto2/parte2/abstracta/Persona.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto2/parte2/abstracta/Trabajador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto2/parte2/imple/Alumno.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto2/parte2/imple/Aula.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto2/parte2/imple/Colegio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto2/parte2/imple/Nota.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjerciciosArrayList/src/main/java/ies/puerto2/parte2/imple/Profesor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ies/puerto/Abtracta/Vehiculo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ies/puerto/Imple/Coche.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ies/puerto/interfaz/IVehiculo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,16 +24,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Torre/OneDrive/Escritorio/Programacion/Unidad-1/Tareas/EjerciciosHashSet",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Torre/OneDrive/Escritorio/Programacion/Unidad-1/Tareas/EjerciciosHashSet&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="AppPersona" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ies.puerto.map.AppPersona" />
+      <module name="EjerciciosHashSet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ies.puerto.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AppPersona" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -79,6 +64,8 @@
       <updated>1706874997786</updated>
       <workItem from="1706875007209" duration="54000" />
       <workItem from="1706875101305" duration="72000" />
+      <workItem from="1707154394344" duration="132000" />
+      <workItem from="1707154537013" duration="7000" />
     </task>
     <servers />
   </component>
