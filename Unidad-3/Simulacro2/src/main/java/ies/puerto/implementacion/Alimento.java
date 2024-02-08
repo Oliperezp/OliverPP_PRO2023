@@ -33,9 +33,11 @@ public class Alimento extends Producto {
         Date diaEntrada=simpleDateFormat.parse(fechaEntrada);
         fechaEntr.setTime(diaEntrada);
         Calendar hoy=Calendar.getInstance();
-        int diasDesdeEntrada=hoy.get(Calendar.DAY_OF_MONTH)-fechaEntr.get(Calendar.DAY_OF_MONTH);
+        long diasDesdeEntrada=hoy.getTimeInMillis()-fechaEntr.getTimeInMillis();
 
-        return diasDesdeEntrada;
+        int dias= (int) diasDesdeEntrada/(1000*60*60*24);
+
+        return dias;
     }
 
     public boolean caducado(String fechaEntrada) throws ParseException {
