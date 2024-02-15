@@ -61,19 +61,12 @@ public class AppTienda {
     public static void eliminarProducto() {
 
         Scanner scanner = new Scanner(System.in);
-        int opcion;
+        int opcion=0;
         String udi;
 
         boolean eliminado = false;
 
-        System.out.println("Seleccione el tipo de producto a borrar:");
-
-        System.out.println("1. Alimento");
-        System.out.println("2. Electrónica");
-        System.out.println("3. Soubenir");
-        System.out.print("Ingrese su opción: ");
-        opcion = scanner.nextInt();
-        scanner.nextLine();
+        menu();
 
         System.out.println("Ingrese el Udi del producto:");
         udi = scanner.nextLine();
@@ -102,16 +95,10 @@ public class AppTienda {
     public static void mostrarProductos() {
         Scanner scanner = new Scanner(System.in);
 
-        int opcion;
+        int opcion=0;
         String udi;
 
-        System.out.println("Seleccione el tipo de producto:");
-        System.out.println("1. Alimento");
-        System.out.println("2. Electrónica");
-        System.out.println("3. Soubenir");
-        System.out.print("Ingrese su opción: ");
-        opcion = scanner.nextInt();
-        scanner.nextLine();
+        menu();
 
         System.out.println("Ingrese el Udi del producto:");
         udi = scanner.nextLine();
@@ -134,19 +121,13 @@ public class AppTienda {
 
     public static void aniadirProducto() {
         Scanner scanner = new Scanner(System.in);
-        int opcion;
+        int opcion=0;
         String udi;
         String nombre;
         float precio;
         String fechaEntrada;
 
-        System.out.println("Seleccione el tipo de producto a añadir:");
-        System.out.println("1. Alimento");
-        System.out.println("2. Electrónica");
-        System.out.println("3. Soubenir");
-        System.out.print("Ingrese su opción: ");
-        opcion = scanner.nextInt();
-        scanner.nextLine();
+        menu();
 
         System.out.println("Nombre del producto:");
         nombre = scanner.nextLine();
@@ -161,6 +142,7 @@ public class AppTienda {
 
         switch (opcion) {
             case 1:
+                Alimento alimento = new Alimento();
                 supermercado.addAlimento(new Alimento(nombre, precio, fechaEntrada, udi));
                 break;
             case 2:
@@ -176,23 +158,16 @@ public class AppTienda {
 
     public static void modificarProducto() {
         Scanner scanner = new Scanner(System.in);
-        int opcion;
+        int opcion=0;
         String udi;
         String nombre;
         float precio;
         String fechaEntrada;
 
-        System.out.println("Seleccione el tipo de producto a modificar:");
-        System.out.println("1. Alimento");
-        System.out.println("2. Electrónica");
-        System.out.println("3. Soubenir");
-        System.out.print("Ingrese su opción: ");
-        opcion = scanner.nextInt();
-        scanner.nextLine();
+        menu();
 
         System.out.println("Nombre del producto:");
         nombre = scanner.nextLine();
-
         System.out.println("Precio:");
         precio = scanner.nextFloat();
         System.out.println("Fecha Entrada:");
@@ -248,6 +223,18 @@ public class AppTienda {
         }
 
     }
+
+    public static void menu(){
+        int opcion;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Seleccione el tipo de producto:");
+        System.out.println("1. Alimento");
+        System.out.println("2. Electrónica");
+        System.out.println("3. Soubenir");
+        System.out.print("Ingrese su opción: ");
+        opcion = scanner.nextInt();scanner.nextLine();
+    }
+
 
 }
 
