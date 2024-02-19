@@ -101,7 +101,7 @@ public class AppBiblioteca {
                         switch (articulo){
                             case "alimento":
                                 break;
-                            case "aparato":
+                            case "aparato":case "souvenir":
                                 break;
                             default:
                                 break;
