@@ -1,4 +1,4 @@
-package ies.puerto.modelo.interfaces;
+package ies.puerto.modelo.entity.interfaces;
 
 public interface IRecomendable {
 

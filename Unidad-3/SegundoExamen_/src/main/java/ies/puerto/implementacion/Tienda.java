@@ -1,11 +1,4 @@
-package ies.puerto.negocio;
-
-import ies.puerto.modelo.entity.abstractas.Producto;
-import ies.puerto.modelo.entity.Alimento;
-import ies.puerto.modelo.entity.Aparato;
-import ies.puerto.modelo.entity.CuidadoPersonal;
-import ies.puerto.modelo.entity.Souvenir;
-import ies.puerto.modelo.fichero.csv.implementacion.FileCsv;
+package ies.puerto.implementacion;
 
 import java.util.*;
 
@@ -14,17 +7,15 @@ public class Tienda {
     private Set<Alimento> alimentos;
     private List<Aparato> aparatos;
     private List<CuidadoPersonal> cuidadoPersonals;
-    private Map<String, Souvenir> souvenirs;
+    private Map<String,Souvenir> souvenirs;
 
-    FileCsv fileCsv;
 
     public Tienda(){
 
         alimentos=new HashSet<>();
         aparatos=new ArrayList<>();
         cuidadoPersonals=new ArrayList<>();
-        souvenirs=new HashMap<>();
-        fileCsv = new FileCsv();
+        souvenirs=new LinkedHashMap<>();
 
     }
 
@@ -34,40 +25,6 @@ public class Tienda {
         this.cuidadoPersonals = cuidadoPersonals;
         this.souvenirs = souvenirs;
     }
-
-    public boolean buscarArticulo(Producto articulo, List<Producto> articulos) {
-        if (articulos.contains(articulo)) {
-            return true;
-        }
-        return false;
-    }
-
-    List<Producto> obtenerAlimentos() {
-        return fileCsv.obtenerAlimentos();
-    }
-
-    List<Producto> obtenerAparatos() {
-        return fileCsv.obtenerAparatos();
-    }
-
-    List<Producto> obtenerSouvenirs() {
-        return fileCsv.obtenerSouvenirs();
-    }
-
-    List<Producto> obtenerCuidados() {
-        return fileCsv.obtenerCuidados();
-    }
-
-    public List<Producto> obtenerArticulos() {
-        List<Producto> articulos = new ArrayList<>();
-        articulos.addAll(fileCsv.obtenerAlimentos());
-        articulos.addAll(fileCsv.obtenerAparatos());
-        articulos.addAll(fileCsv.obtenerSouvenirs());
-        articulos.addAll(fileCsv.obtenerCuidados());
-
-        return articulos;
-    }
-
 
 
     /**
@@ -187,8 +144,6 @@ public class Tienda {
         }
       return null;
     }
-
-
     /**
      * Funcion que obtiene aparatos de la lista
      * @param id
@@ -281,7 +236,8 @@ public class Tienda {
         if(alimentos.isEmpty()){
             return cantidad;
         }
-     return alimentos.size();
+
+      return alimentos.size();
    }
 
     public int cantidadDeAparatos(){
@@ -291,7 +247,10 @@ public class Tienda {
             return cantidad;
         }
 
-        return aparatos.size();
+        for (Aparato aparato:aparatos) {
+            cantidad+=aparato.cantidadDisponible();
+        }
+        return cantidad;
     }
 
     public int cantidadDeCuidadoPersonal(){
@@ -301,7 +260,10 @@ public class Tienda {
             return cantidad;
         }
 
-        return cuidadoPersonals.size();
+        for (CuidadoPersonal cuidadoPersonal:cuidadoPersonals) {
+            cantidad+=cuidadoPersonal.cantidadDisponible();
+        }
+        return cantidad;
     }
 
     public int cantidadDeSouvenirs(){
@@ -311,7 +273,10 @@ public class Tienda {
             return cantidad;
         }
 
-        return souvenirs.size();
+        for (Souvenir souvenir:souvenirs.values()) {
+            cantidad+=souvenir.cantidadDisponible();
+        }
+        return cantidad;
     }
 
     public float gananciasAlimentos(){
@@ -319,7 +284,7 @@ public class Tienda {
         float ganacia=0;
         for (Alimento alimento:alimentos){
 
-            ganacia+=(alimento.precioMaximo())- (alimento.getPrecio());
+            ganacia+=alimento.getPrecio()-(alimento.getPrecio()/1.35f);
         }
         return ganacia;
     }
@@ -329,7 +294,7 @@ public class Tienda {
         float ganacia=0;
         for (Aparato aparato: aparatos){
 
-            ganacia+=(aparato.precioMaximo())-(aparato.getPrecio());
+            ganacia+=(aparato.getPrecio()*1.42f)-aparato.getPrecio()-;
         }
         return ganacia;
     }
@@ -339,7 +304,7 @@ public class Tienda {
         float ganacia=0;
         for (CuidadoPersonal cuidadoPersonal: cuidadoPersonals){
 
-            ganacia+=(cuidadoPersonal.precioMaximo())-(cuidadoPersonal.getPrecio());
+            ganacia+=cuidadoPersonal.getPrecio()-(cuidadoPersonal.getPrecio()/1.8f);
         }
         return ganacia;
     }
@@ -348,7 +313,7 @@ public class Tienda {
         float ganacia=0;
         for (Souvenir souvenir: souvenirs.values()){
 
-            ganacia+=(souvenir.precioMaximo())-(souvenir.getPrecio());
+            ganacia+=souvenir.getPrecio()-(souvenir.getPrecio()/1.3f);
         }
         return ganacia;
     }

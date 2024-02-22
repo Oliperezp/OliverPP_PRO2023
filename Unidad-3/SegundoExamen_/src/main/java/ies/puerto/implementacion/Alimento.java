@@ -1,6 +1,6 @@
-package ies.puerto.modelo.entity;
+package ies.puerto.implementacion;
 
-import ies.puerto.modelo.entity.abstractas.ProductoFresco;
+import ies.puerto.abstractas.ProductoFresco;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -69,13 +69,11 @@ public class Alimento extends ProductoFresco {
 
     @Override
     public float precioMaximo() {
-
         return getPrecio()*1.35f;
     }
 
     @Override
     public int cantidadDisponible() {
-
         return 5;
     }
 }

@@ -1,10 +1,6 @@
-package ies.puerto.presentacion;
+package ies.puerto.app;
 
-import ies.puerto.negocio.*;
-import ies.puerto.modelo.entity.Alimento;
-import ies.puerto.modelo.entity.Aparato;
-import ies.puerto.modelo.entity.CuidadoPersonal;
-import ies.puerto.modelo.entity.Souvenir;
+import ies.puerto.implementacion.*;
 
 import java.util.Scanner;
 
@@ -16,13 +12,6 @@ public class AppTienda {
     public static void main(String[] args) {
 
         tienda = new Tienda();
-
-        tienda.obtenerArticulos();
-
-
-
-
-
         Scanner sc = new Scanner(System.in);
         int opcion;
 
@@ -286,9 +275,6 @@ public class AppTienda {
 
         }
 
-        System.out.println("Precio total Productos: " +tienda.precioTotalProductos());
-        System.out.println("Ganacia total de la tienda:" + tienda.ganaciaTotalTienda());
-        System.out.println("Ganacias alimentos: "+ tienda.gananciasAlimentos());
 
     }
 }

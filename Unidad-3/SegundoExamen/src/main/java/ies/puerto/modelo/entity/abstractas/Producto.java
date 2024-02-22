@@ -1,11 +1,12 @@
-package ies.puerto.modelo.abstractas;
+package ies.puerto.modelo.entity.abstractas;
 
-import ies.puerto.modelo.interfaces.IVendible;
+import ies.puerto.modelo.entity.interfaces.IVendible;
 
 import java.util.Objects;
 
 public abstract class Producto implements IVendible {
 
+    public final String DELIMITADOR = ",";
     private String nombre;
     private float precio;
     private String fechaEntrada;

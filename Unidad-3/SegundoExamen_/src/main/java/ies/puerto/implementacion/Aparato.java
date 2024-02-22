@@ -1,6 +1,6 @@
-package ies.puerto.modelo.entity;
+package ies.puerto.implementacion;
 
-import ies.puerto.modelo.entity.abstractas.Producto;
+import ies.puerto.abstractas.Producto;
 
 public class Aparato extends Producto {
 

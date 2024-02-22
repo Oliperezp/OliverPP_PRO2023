@@ -1,6 +1,6 @@
-package ies.puerto.modelo.entity;
+package ies.puerto.implementacion;
 
-import ies.puerto.modelo.entity.abstractas.ProductoRecomendable;
+import ies.puerto.abstractas.ProductoRecomendable;
 
 public class CuidadoPersonal extends ProductoRecomendable {
 
@@ -23,10 +23,7 @@ public class CuidadoPersonal extends ProductoRecomendable {
 
     @Override
     public boolean productoRecomendado() {
-        if(calcularPopularidad() >= 7){
-            return true;
-        }
-        return false;
+        return calcularPopularidad() > 7;
     }
 
     @Override
@@ -35,6 +32,8 @@ public class CuidadoPersonal extends ProductoRecomendable {
         if(popularidad>=7){
             return popularidad;
         }
+
+
         return 0;
     }
 
@@ -48,13 +47,4 @@ public class CuidadoPersonal extends ProductoRecomendable {
 
         return 7;
     }
-
-
-    public String toCsv(){
-        return getNombre()+ DELIMITADOR +getPrecio()
-                +DELIMITADOR+getFechaEntrada()+DELIMITADOR+
-                getId()+DELIMITADOR+popularidad;
-    }
-
-
 }
