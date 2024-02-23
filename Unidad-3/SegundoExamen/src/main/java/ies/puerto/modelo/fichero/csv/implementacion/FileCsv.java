@@ -74,12 +74,13 @@ public class FileCsv extends FicheroAbstract implements IFileInterface {
 
     @Override
     public boolean escritura(String path, String contenido) {
+
         return almacenarEnFichero(path, contenido);
     }
 
     private Alimento splitToAlimento(String[] splitArray){
-        Alimento alimento = new Alimento(splitArray[0],
-                Float.parseFloat(splitArray[1]),splitArray[2],
+        Alimento alimento = new Alimento(splitArray[1],
+                Float.parseFloat(splitArray[0]),splitArray[2],
                 splitArray[3], splitArray[4]);
         return alimento;
     }

@@ -64,15 +64,11 @@ public abstract class Vehiculo implements IVehiculo {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Vehiculo vehiculo = (Vehiculo) o;
-        return velocidad == vehiculo.velocidad && Objects.equals(marca, vehiculo.marca) && Objects.equals(modelo, vehiculo.modelo) && Objects.equals(matricula, vehiculo.matricula);
+        return Objects.equals(matricula, vehiculo.matricula);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(marca, modelo, matricula, velocidad);
+        return Objects.hash(matricula);
     }
-
-
-
-
 }

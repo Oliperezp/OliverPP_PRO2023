@@ -179,30 +179,33 @@ public class Tienda {
      * @return el alimento de la lista
      *
      */
+
+
     public Alimento obtenerAlimento(String id){
         for (Alimento alimento:alimentos) {
-            if(alimento.getId().equals(id)){
+            if(alimentos.contains(id)){
                 return alimento;
             }
         }
-      return null;
-    }
+          return null;
+        }
 
-
-    /**
+     /**
      * Funcion que obtiene aparatos de la lista
      * @param id
      * @return el aparato de la lista
      *
      */
     public Aparato obtenerAparato(String id){
-        for (Aparato aparato:aparatos) {
-            if(aparato.getId().equals(id)){
+        for (Aparato aparato: aparatos) {
+            if(aparatos.contains(id)){
                 return aparato;
             }
         }
+
         return null;
-    }
+        }
+
     /**
      * Funcion que obtiene Productos Cuidado Personal de la lista
      * @param id
@@ -210,13 +213,16 @@ public class Tienda {
      *
      */
     public CuidadoPersonal obtenerCuidadoPersonal(String id){
-        for (CuidadoPersonal cuidadoPersonal:cuidadoPersonals) {
-            if(cuidadoPersonal.getId().equals(id)){
-                return cuidadoPersonal;
+        for (CuidadoPersonal cuidado: cuidadoPersonals) {
+            if(cuidadoPersonals.contains(cuidado)){
+                return cuidado;
             }
-        }
+                   }
+
         return null;
-    }
+        }
+
+
     /**
      * Funcion que obtiene souvenirs de la lista
      * @param id
@@ -224,13 +230,16 @@ public class Tienda {
      *
      */
     public Souvenir obtenerSouvenir(String id){
-        for (Souvenir souvenir:souvenirs.values()) {
-            if(souvenir.getId().equals(id)){
+        for (Souvenir souvenir: souvenirs.values()) {
+            if(souvenirs.containsKey(id)){
                 return souvenir;
             }
         }
+
         return null;
-    }
+        }
+
+
 
     public float precioAlimentos(){
         float total=0;
@@ -357,6 +366,12 @@ public class Tienda {
         return gananciasAlimentos()+gananciasAparatos()+gananciasCuidadoPersonal()+gananciasSouvenirs();
     }
 
+    public boolean obtenerProductosPopulares(){
+        for (CuidadoPersonal cuidados: cuidadoPersonals) {
+            boolean recomendados =cuidados.productoRecomendado();
+        }
+        return false;
+    }
 
 
 }

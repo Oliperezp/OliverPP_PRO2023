@@ -60,7 +60,6 @@ public class Concesionario {
 
     public Coche obtenerCoche(String matricula){
         for (Coche coche:coches) {
-
             if(coche.getMatricula().equals(matricula)){
                 return coche;
             }
@@ -92,14 +91,12 @@ public class Concesionario {
 
     public boolean removeMotocicleta(Motocicleta motocicleta){
 
-
-
-            if(motos.contains(motocicleta)){
+              if(motos.contains(motocicleta)){
                 return motos.remove(motocicleta);
             }
 
 
-        return false;
+        return true;
     }
 
     public Motocicleta obtenerMotocicleta(String matricula){
@@ -150,43 +147,7 @@ public class Concesionario {
     }
 
     public float velocidadMediaVehiculos(){
-        float sumaMotos=0f;
-        float sumaCoches=0f;
-        float sumaCamiones=0f;
-        float sumaBicicletas=0f;
-
-        int tamanio=coches.size()+motos.size()+camiones.size()+bicicletas.size();
-
-        if(coches.isEmpty()){
-            return sumaCoches;
-        }
-        if(motos.isEmpty()){
-            return sumaMotos;
-        }
-        if(camiones.isEmpty()){
-            return sumaCamiones;
-        }
-        if(bicicletas.isEmpty()){
-            return sumaBicicletas;
-        }
-
-        for (Coche coche: coches) {
-            sumaCoches+=velocidadMediaCoches();
-        }
-
-        for (Motocicleta motocicleta:motos) {
-            sumaMotos+=velocidadMediaMotos();
-        }
-        for (Bicicleta bicicleta:bicicletas.values()) {
-            sumaBicicletas+=velocidadMediaBicicletas();
-        }
-
-        for (Camion camion:camiones.values()) {
-            sumaCamiones+=velocidadMediaCamiones();
-        }
-        float sumaTotal= sumaCoches+sumaMotos+sumaBicicletas+sumaCamiones;
-
-        return sumaTotal/tamanio;
+       return velocidadMediaBicicletas()+velocidadMediaCamiones()+velocidadMediaCoches()+velocidadMediaMotos();
     }
 
     public boolean addCamion(Camion camion){

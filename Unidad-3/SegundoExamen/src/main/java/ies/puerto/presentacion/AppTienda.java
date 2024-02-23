@@ -1,5 +1,6 @@
 package ies.puerto.presentacion;
 
+import ies.puerto.modelo.fichero.csv.implementacion.FileCsv;
 import ies.puerto.negocio.*;
 import ies.puerto.modelo.entity.Alimento;
 import ies.puerto.modelo.entity.Aparato;
@@ -12,16 +13,14 @@ public class AppTienda {
 
 
     static Tienda tienda;
+    static FileCsv csv;
+    static CuidadoPersonal cuidado;
 
     public static void main(String[] args) {
 
         tienda = new Tienda();
 
-        tienda.obtenerArticulos();
-
-
-
-
+        //tienda.obtenerArticulos();
 
         Scanner sc = new Scanner(System.in);
         int opcion;
@@ -36,7 +35,11 @@ public class AppTienda {
             System.out.println("2.Mostrar producto");
             System.out.println("3.Eliminar Producto");
             System.out.println("4.Modificar Producto");
-            System.out.println("5.Salir de la tienda");
+            System.out.println("5.Precio total productos");
+            System.out.println("6.Precio total ganacias");
+            System.out.println("7.Cantidad de productos de un tipo");
+            System.out.println("8.Productos de Cuidado Personal recomendados");
+            System.out.println("9.Salir de la tienda");
             System.out.println();
 
             System.out.println("Elija su opcion: ");
@@ -58,7 +61,19 @@ public class AppTienda {
                     modificarProducto();
                     break;
                 case 5:
-                    opcion=5;
+                    mostrarTotalProductos();
+                    break;
+                case 6:
+                    mostrarTotalGanancias();
+                    break;
+                case 7:
+                    cantidadProductos();
+                    break;
+                case 8:
+                    productosRecomendados();
+                    break;
+                case 9:
+                    opcion=9;
                     System.out.println("Hasta luego....");
                     break;
                 default:
@@ -68,11 +83,10 @@ public class AppTienda {
             }
 
 
-        } while (opcion != 5);
+        } while (opcion != 7);
 
 
     }
-
     public static void menu() {
 
 
@@ -277,7 +291,6 @@ public class AppTienda {
                 souvenirAModificar.setNombre(nombre);
                 souvenirAModificar.setPrecio(precio);
                 souvenirAModificar.setFechaEntrada(fechaEntrada);
-
                 break;
             default:
                 System.out.println("No es una opcion valida");
@@ -286,9 +299,55 @@ public class AppTienda {
 
         }
 
-        System.out.println("Precio total Productos: " +tienda.precioTotalProductos());
-        System.out.println("Ganacia total de la tienda:" + tienda.ganaciaTotalTienda());
-        System.out.println("Ganacias alimentos: "+ tienda.gananciasAlimentos());
 
     }
+
+    public static void cantidadProductos(){
+        Scanner scanner= new Scanner(System.in);
+        int opcion;
+
+        menu();
+        opcion=scanner.nextInt();
+
+        switch (opcion){
+            case 1:
+                System.out.println("La cantidad de alimentos es de: "+ tienda.cantidadDeAlimentos());
+                break;
+            case 2:
+                System.out.println("La cantidad de aparatos es de: " + tienda.cantidadDeAparatos());
+                break;
+            case 3:
+                System.out.println("La cantidad de Cuidado Personal es:" + tienda.cantidadDeCuidadoPersonal());
+                break;
+            case 4:
+                System.out.println("La cantidad de souvenirs es:" + tienda.cantidadDeSouvenirs());
+                break;
+            default:
+                System.out.println("No es una opcion válida");
+                break;
+        }
+
+
+    }
+
+
+
+    public static void productosRecomendados(){
+           tienda.obtenerProductosPopulares();
+              }
+
+
+
+    public static void mostrarTotalProductos(){
+        System.out.println("Precio total Productos: " +tienda.precioTotalProductos());
+    }
+
+    public static void mostrarTotalGanancias(){
+        System.out.println("Ganacia total de la tienda:" + tienda.ganaciaTotalTienda());
+    }
+
+
+
+
+
 }

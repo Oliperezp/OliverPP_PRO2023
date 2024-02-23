@@ -8,10 +8,7 @@ import java.util.Scanner;
 public class AppConcesionario {
 
     static Concesionario concesionario;
-    static Coche coche;
-    static Motocicleta moto;
-    static Camion camion;
-    static Bicicleta bici;
+
 
 
     public static void main(String[] args) {
@@ -66,7 +63,7 @@ public class AppConcesionario {
                     agregarVehiculo(concesionario);
                     break;
                 case 2:
-
+                    eliminarVehiculo();
                    break;
                 case 3:
                    obtenerVehiculo(concesionario);
@@ -170,6 +167,38 @@ public class AppConcesionario {
                 System.out.println("Opción no válida.");
         }
 
+
+    }
+    public static void eliminarVehiculo(){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Seleccione el tipo de vehículo:");
+        System.out.println("1. Coche");
+        System.out.println("2. Motocicleta");
+        System.out.println("3. Camion");
+        System.out.println("4. Bicicleta");
+        int tipo = sc.nextInt();
+
+        System.out.print("Ingrese matricula: ");
+        String matricula = sc.next();
+
+        switch (tipo) {
+            case 1:
+                Coche cocheAEliminar = concesionario.obtenerCoche(matricula);
+                concesionario.removeCoche(cocheAEliminar);
+                break;
+            case 2:
+                concesionario.obtenerMotocicleta(matricula);
+                break;
+            case 3:
+                concesionario.obtenerCamion(matricula);
+                break;
+            case 4:
+                concesionario.obtenerBicicleta(matricula);
+                break;
+            default:
+                System.out.println("Opción no válida.");
+        }
 
     }
 
