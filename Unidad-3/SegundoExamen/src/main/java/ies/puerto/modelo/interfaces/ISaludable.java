@@ -1,4 +1,4 @@
-package ies.puerto.modelo.entity.interfaces;
+package ies.puerto.modelo.interfaces;
 
 import java.text.ParseException;
 

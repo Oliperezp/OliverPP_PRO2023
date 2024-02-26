@@ -1,11 +1,11 @@
-package ies.puerto.modelo.fichero.csv.implementacion;
+package ies.puerto.modelo.impl.fichero.csv.implementacion;
 
-import ies.puerto.modelo.entity.abstractas.Producto;
-import ies.puerto.modelo.entity.Alimento;
-import ies.puerto.modelo.entity.Aparato;
-import ies.puerto.modelo.entity.CuidadoPersonal;
-import ies.puerto.modelo.fichero.IFileInterface;
-import ies.puerto.modelo.fichero.abstractas.FicheroAbstract;
+import ies.puerto.modelo.impl.abstractas.Producto;
+import ies.puerto.modelo.impl.Alimento;
+import ies.puerto.modelo.impl.Aparato;
+import ies.puerto.modelo.impl.CuidadoPersonal;
+import ies.puerto.modelo.impl.fichero.interfaces.IFileInterface;
+import ies.puerto.modelo.impl.fichero.abstractas.FicheroAbstract;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -30,7 +30,6 @@ public class FileCsv extends FicheroAbstract implements IFileInterface {
     public List<Producto> obtenerAparatos(){
         return lectura(FICHERO_APARATOS,"aparato");
     }
-
     public List<Producto> obtenerSouvenirs(){
         return lectura(FICHERO_SOUVENIRS,"souvernir");
     }
@@ -74,9 +73,19 @@ public class FileCsv extends FicheroAbstract implements IFileInterface {
 
     @Override
     public boolean escritura(String path, String contenido) {
-
         return almacenarEnFichero(path, contenido);
     }
+
+    @Override
+    public boolean actualizar(Producto producto) {
+        return false;
+    }
+
+    @Override
+    public boolean borrar(Producto producto) {
+        return false;
+    }
+
 
     private Alimento splitToAlimento(String[] splitArray){
         Alimento alimento = new Alimento(splitArray[1],

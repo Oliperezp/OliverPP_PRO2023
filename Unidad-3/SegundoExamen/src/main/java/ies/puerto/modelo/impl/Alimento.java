@@ -1,6 +1,6 @@
-package ies.puerto.modelo.entity;
+package ies.puerto.modelo.impl;
 
-import ies.puerto.modelo.entity.abstractas.ProductoFresco;
+import ies.puerto.modelo.impl.abstractas.ProductoFresco;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

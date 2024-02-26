@@ -1,11 +1,11 @@
 package ies.puerto.negocio;
 
-import ies.puerto.modelo.entity.abstractas.Producto;
-import ies.puerto.modelo.entity.Alimento;
-import ies.puerto.modelo.entity.Aparato;
-import ies.puerto.modelo.entity.CuidadoPersonal;
-import ies.puerto.modelo.entity.Souvenir;
-import ies.puerto.modelo.fichero.csv.implementacion.FileCsv;
+import ies.puerto.modelo.impl.abstractas.Producto;
+import ies.puerto.modelo.impl.Alimento;
+import ies.puerto.modelo.impl.Aparato;
+import ies.puerto.modelo.impl.CuidadoPersonal;
+import ies.puerto.modelo.impl.Souvenir;
+import ies.puerto.modelo.impl.fichero.csv.implementacion.FileCsv;
 
 import java.util.*;
 
@@ -68,176 +68,38 @@ public class Tienda {
         return articulos;
     }
 
-
-
-    /**
-     * Funcion que agrega alimentos a la lista
-     * @param alimento
-     * @return true si fue insertado
-     */
-    public boolean addAlimentos(Alimento alimento){
-
-        if(!alimentos.contains(alimento)){
-            alimentos.add(alimento);
+    public boolean crearAlimento(Alimento alimento){
+        if(fileCsv.obtenerAlimentos().contains(alimento)){
+            return true;
         }
-        return true;
+        return fileCsv.escritura(fileCsv.FICHERO_ALIMENTOS, "alimento");
     }
 
-    /**
-     * Funcion que agrega productos a la lista
-     * @param aparato
-     * @return true si fue insertado
-     */
-     public boolean addAparatos(Aparato aparato){
-
-        if(!aparatos.contains(aparato)){
-            aparatos.add(aparato);
+    public boolean crearAparato(Aparato aparato){
+        if(fileCsv.obtenerAparatos().contains(aparato)){
+            return true;
         }
-      return true;
+        return fileCsv.escritura(fileCsv.FICHERO_APARATOS, "default");
     }
 
-    /**
-     * Funcion que agrega productos a la lista
-     * @param cuidadoPersonal
-     * @return true si fue insertado
-     */
-    public boolean addCuidadoPersonal(CuidadoPersonal cuidadoPersonal){
-
-        if(!cuidadoPersonals.contains(cuidadoPersonal)){
-            cuidadoPersonals.add(cuidadoPersonal);
+    public boolean crearCuidadoPersonal(CuidadoPersonal cuidadoPersonal){
+        if(fileCsv.obtenerCuidados().contains(cuidadoPersonal)){
+            return true;
         }
-        return true;
+        return fileCsv.escritura(fileCsv.FICHERO_CUIDADO_PERSONAL, "cuidado");
     }
 
-    /**
-     * Funcion que agrega productos a la lista
-     * @param souvenir
-     * @return true si fue insertado
-     */
-    public boolean addSouvenirs(Souvenir souvenir){
-
-        if(!souvenirs.containsKey(souvenir.getId())){
-            souvenirs.put(souvenir.getId(),souvenir);
+    public boolean crearSouvenir(Souvenir souvenir){
+        if(fileCsv.obtenerSouvenirs().contains(souvenir)){
+            return true;
         }
-        return true;
-    }
-
-    /**
-     * Funcion que elimina alimentos de la lista
-     * @param alimento
-     * @return true si fue eliminado
-     *
-     */
-    public boolean removeAlimentos(Alimento alimento){
-        if(alimentos.contains(alimento)){
-            alimentos.remove(alimento);
-        }
-        return true;
-    }
-    /**
-     * Funcion que elimina aparatos de la lista
-     * @param aparato
-     * @return true si fue eliminado
-     *
-     */
-    public boolean removeAparatos(Aparato aparato){
-        if(aparatos.contains(aparato)){
-            aparatos.remove(aparato);
-        }
-        return true;
-    }
-    /**
-     * Funcion que elimina productos de la lista
-     * @param cuidadoPersonal
-     * @return true si fue eliminado
-     *
-     */
-    public boolean removeCuidadoPersonal(CuidadoPersonal cuidadoPersonal){
-        if(cuidadoPersonals.contains(cuidadoPersonal)){
-            cuidadoPersonals.remove(cuidadoPersonal);
-        }
-        return true;
-    }
-
-    /**
-     * Funcion que elimina souvenirs de la lista
-     * @param souvenir
-     * @return true si fue eliminado
-     *
-     */
-    public boolean removeSouvenirs(Souvenir souvenir){
-        if(souvenirs.containsKey(souvenir.getId())){
-            souvenirs.remove(souvenir.getId());
-        }
-        return true;
+        return fileCsv.escritura(fileCsv.FICHERO_SOUVENIRS, "default");
     }
 
 
-    /**
-     * Funcion que obtiene alimentos de la lista
-     * @param id
-     * @return el alimento de la lista
-     *
-     */
 
 
-    public Alimento obtenerAlimento(String id){
-        for (Alimento alimento:alimentos) {
-            if(alimentos.contains(id)){
-                return alimento;
-            }
-        }
-          return null;
-        }
 
-     /**
-     * Funcion que obtiene aparatos de la lista
-     * @param id
-     * @return el aparato de la lista
-     *
-     */
-    public Aparato obtenerAparato(String id){
-        for (Aparato aparato: aparatos) {
-            if(aparatos.contains(id)){
-                return aparato;
-            }
-        }
-
-        return null;
-        }
-
-    /**
-     * Funcion que obtiene Productos Cuidado Personal de la lista
-     * @param id
-     * @return el Producto de la lista
-     *
-     */
-    public CuidadoPersonal obtenerCuidadoPersonal(String id){
-        for (CuidadoPersonal cuidado: cuidadoPersonals) {
-            if(cuidadoPersonals.contains(cuidado)){
-                return cuidado;
-            }
-                   }
-
-        return null;
-        }
-
-
-    /**
-     * Funcion que obtiene souvenirs de la lista
-     * @param id
-     * @return el souvenirs de la lista
-     *
-     */
-    public Souvenir obtenerSouvenir(String id){
-        for (Souvenir souvenir: souvenirs.values()) {
-            if(souvenirs.containsKey(id)){
-                return souvenir;
-            }
-        }
-
-        return null;
-        }
 
 
 
@@ -372,6 +234,8 @@ public class Tienda {
         }
         return false;
     }
+
+
 
 
 }

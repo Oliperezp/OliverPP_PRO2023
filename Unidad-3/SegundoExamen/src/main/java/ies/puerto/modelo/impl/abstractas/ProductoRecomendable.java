@@ -1,6 +1,6 @@
-package ies.puerto.modelo.entity.abstractas;
+package ies.puerto.modelo.impl.abstractas;
 
-import ies.puerto.modelo.entity.interfaces.IRecomendable;
+import ies.puerto.modelo.interfaces.IRecomendable;
 
 public abstract class ProductoRecomendable extends Producto implements IRecomendable {
 

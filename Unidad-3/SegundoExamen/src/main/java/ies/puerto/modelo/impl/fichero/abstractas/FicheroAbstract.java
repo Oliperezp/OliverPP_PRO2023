@@ -1,4 +1,4 @@
-package ies.puerto.modelo.fichero.abstractas;
+package ies.puerto.modelo.impl.fichero.abstractas;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -33,4 +33,9 @@ public abstract class FicheroAbstract {
         }
         return true;
     }
+
+
+
+
+
 }

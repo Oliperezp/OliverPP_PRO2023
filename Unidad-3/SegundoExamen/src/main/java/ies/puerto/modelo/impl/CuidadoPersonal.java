@@ -1,6 +1,6 @@
-package ies.puerto.modelo.entity;
+package ies.puerto.modelo.impl;
 
-import ies.puerto.modelo.entity.abstractas.ProductoRecomendable;
+import ies.puerto.modelo.impl.abstractas.ProductoRecomendable;
 
 public class CuidadoPersonal extends ProductoRecomendable {
 

@@ -1,11 +1,11 @@
 package ies.puerto.presentacion;
 
-import ies.puerto.modelo.fichero.csv.implementacion.FileCsv;
+import ies.puerto.modelo.impl.fichero.csv.implementacion.FileCsv;
 import ies.puerto.negocio.*;
-import ies.puerto.modelo.entity.Alimento;
-import ies.puerto.modelo.entity.Aparato;
-import ies.puerto.modelo.entity.CuidadoPersonal;
-import ies.puerto.modelo.entity.Souvenir;
+import ies.puerto.modelo.impl.Alimento;
+import ies.puerto.modelo.impl.Aparato;
+import ies.puerto.modelo.impl.CuidadoPersonal;
+import ies.puerto.modelo.impl.Souvenir;
 
 import java.util.Scanner;
 
