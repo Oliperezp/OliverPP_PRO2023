@@ -7,6 +7,8 @@ import ies.puerto.modelo.impl.CuidadoPersonal;
 import ies.puerto.modelo.impl.Souvenir;
 import ies.puerto.modelo.impl.fichero.csv.implementacion.FileCsv;
 
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.*;
 
 public class Tienda {
@@ -43,22 +45,26 @@ public class Tienda {
     }
 
     List<Producto> obtenerAlimentos() {
+
         return fileCsv.obtenerAlimentos();
     }
 
     List<Producto> obtenerAparatos() {
+
         return fileCsv.obtenerAparatos();
     }
 
     List<Producto> obtenerSouvenirs() {
+
         return fileCsv.obtenerSouvenirs();
     }
 
     List<Producto> obtenerCuidados() {
+
         return fileCsv.obtenerCuidados();
     }
 
-    public List<Producto> obtenerArticulos() {
+    public List<Producto> obtenerProductos() {
         List<Producto> articulos = new ArrayList<>();
         articulos.addAll(fileCsv.obtenerAlimentos());
         articulos.addAll(fileCsv.obtenerAparatos());
@@ -96,12 +102,12 @@ public class Tienda {
         return fileCsv.escritura(fileCsv.FICHERO_SOUVENIRS, "default");
     }
 
-
-
-
-
-
-
+    public boolean borrarAlimento(Producto producto){
+        if(fileCsv.obtenerAlimentos().contains(producto)){
+            return true;
+        }
+        return fileCsv.borrarProducto(fileCsv.FICHERO_ALIMENTOS,producto);
+    }
 
     public float precioAlimentos(){
         float total=0;
@@ -146,44 +152,79 @@ public class Tienda {
         return precioAlimentos()+precioAparatos()+precioCuidadoPersonal()+precioSouvenirs();
     }
 
-   public int cantidadDeAlimentos(){
+   public void cantidadDeAlimentos(){
+       int count = 0;
+       try {
+           FileReader reader = new FileReader("alimentos.csv");
 
-        int cantidad=0;
-        if(alimentos.isEmpty()){
-            return cantidad;
-        }
-     return alimentos.size();
+           while (reader.readNext() != null) {
+               count++;
+           }
+           reader.close();
+           System.out.println("Número total de registros: " + count);
+       } catch (IOException e) {
+           System.out.println("Error al contar registros en el archivo CSV: " + e.getMessage());
+       }
+
+
    }
 
-    public int cantidadDeAparatos(){
+   public void cantidadDeAparatos(){
 
-        int cantidad=0;
-        if(aparatos.isEmpty()){
-            return cantidad;
+
+           int count = 0;
+           try {
+               FileReader reader = new FileReader("aparatos.csv");
+
+               while (reader.readNext() != null) {
+                   count++;
+               }
+               reader.close();
+               System.out.println("Número total de registros: " + count);
+           } catch (IOException e) {
+               System.out.println("Error al contar registros en el archivo CSV: " + e.getMessage());
+           }
+
+
+       }
+
+
+    public void cantidadDeCuidadoPersonal(){
+
+
+            int count = 0;
+            try {
+                FileReader reader = new FileReader("cuidado-personal.csv");
+
+                while (reader.readNext() != null) {
+                    count++;
+                }
+                reader.close();
+                System.out.println("Número total de registros: " + count);
+            } catch (IOException e) {
+                System.out.println("Error al contar registros en el archivo CSV: " + e.getMessage());
+            }
         }
 
-        return aparatos.size();
-    }
 
-    public int cantidadDeCuidadoPersonal(){
+    public void cantidadDeSouvenirs(){
 
-        int cantidad=0;
-        if(cuidadoPersonals.isEmpty()){
-            return cantidad;
+
+            int count = 0;
+            try {
+                FileReader reader = new FileReader("souvernirs.csv");
+
+                while (reader.readNext() != null) {
+                    count++;
+                }
+                reader.close();
+                System.out.println("Número total de registros: " + count);
+            } catch (IOException e) {
+                System.out.println("Error al contar registros en el archivo CSV: " + e.getMessage());
+            }
+
         }
 
-        return cuidadoPersonals.size();
-    }
-
-    public int cantidadDeSouvenirs(){
-
-        int cantidad=0;
-        if(souvenirs.isEmpty()){
-            return cantidad;
-        }
-
-        return souvenirs.size();
-    }
 
     public float gananciasAlimentos(){
 

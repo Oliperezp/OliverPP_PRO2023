@@ -21,6 +21,10 @@ public abstract class Producto implements IVendible {
         this.id = id;
     }
 
+    public Producto(String id){
+        this.id=id;
+    }
+
     public String getNombre() {
         return nombre;
     }

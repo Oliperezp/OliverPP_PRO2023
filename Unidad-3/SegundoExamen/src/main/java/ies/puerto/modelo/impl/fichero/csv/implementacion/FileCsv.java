@@ -77,19 +77,20 @@ public class FileCsv extends FicheroAbstract implements IFileInterface {
     }
 
     @Override
-    public boolean actualizar(Producto producto) {
+    public boolean actualizar(String path, Producto producto, String contenido) {
         return false;
     }
 
-    @Override
-    public boolean borrar(Producto producto) {
-        return false;
+
+
+    public boolean borrar(String path, Producto producto) {
+        return borrarProducto(path,producto);
     }
 
 
     private Alimento splitToAlimento(String[] splitArray){
-        Alimento alimento = new Alimento(splitArray[1],
-                Float.parseFloat(splitArray[0]),splitArray[2],
+        Alimento alimento = new Alimento(splitArray[0],
+                Float.parseFloat(splitArray[1]),splitArray[2],
                 splitArray[3], splitArray[4]);
         return alimento;
     }

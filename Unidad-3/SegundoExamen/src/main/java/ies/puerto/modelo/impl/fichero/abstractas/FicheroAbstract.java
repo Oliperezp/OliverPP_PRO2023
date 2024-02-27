@@ -1,9 +1,8 @@
 package ies.puerto.modelo.impl.fichero.abstractas;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import ies.puerto.modelo.impl.abstractas.Producto;
+
+import java.io.*;
 
 public abstract class FicheroAbstract {
 
@@ -34,8 +33,101 @@ public abstract class FicheroAbstract {
         return true;
     }
 
+    public boolean borrarProducto(String path, Producto producto) {
 
+        if (!existeFichero(path)) {
+            return false;
+        }
 
+        File fichero = new File(path);
+        File nuevoFichero = new File("producto.csv");
+
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(fichero));
+            BufferedWriter writer = new BufferedWriter(new FileWriter(nuevoFichero));
+
+            String lineaActual;
+
+            while ((lineaActual = reader.readLine()) != null) {
+                String[] campos = lineaActual.split(",");
+
+                if (!campos[0].equals(producto.getId())) {
+                    writer.write(lineaActual + "\n");
+                }
+            }
+
+            writer.close();
+            reader.close();
+
+            if (fichero.delete()) {
+                if (!nuevoFichero.renameTo(fichero)) {
+                    System.out.println("Error al renombrar el archivo temporal.");
+                }
+            } else {
+                System.out.println("Error al eliminar el archivo");
+            }
+
+        } catch (IOException e) {
+            System.out.println("Archivo no encontrado" + e.getMessage());
+        }
+        return true;
+    }
+    public boolean actualizarProducto(String path, String id, String nuevoNombre, float nuevoPrecio,String nuevaFechaEntrada,
+        String nuevaFechaCaducidad) {
+
+            if (!existeFichero(path)) {
+                return false;
+            }
+
+            File inputFile = new File(path);
+            File tempFile = new File("productos.csv");
+
+            try {
+                BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+                BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile));
+
+                String lineaActual;
+
+                while ((lineaActual = reader.readLine()) != null) {
+
+                    String[] campos = lineaActual.split(",");
+
+                    if (campos.length > 0 && campos[0].equals(id)) {
+
+                        campos[0] = nuevoNombre;
+                        campos[1] = String.valueOf(nuevoPrecio);
+                        campos[2] = nuevaFechaEntrada;
+                        campos[5] = nuevaFechaCaducidad;
+                        lineaActual = String.join(",", campos);
+                    }
+
+                    writer.write(lineaActual + "\n");
+                }
+
+                writer.close();
+                reader.close();
+
+                if (inputFile.delete()) {
+
+                    if (!tempFile.renameTo(inputFile)) {
+                        System.out.println("Error al renombrar el archivo temporal.");
+                    }
+                } else {
+                    System.out.println("Error al eliminar el archivo original.");
+                }
+
+            } catch (IOException e) {
+                System.out.println("Archivo no encontrado: " + e.getMessage());
+            }
+            return true;
+        }
 
 
 }
+
+
+
+
+
+
+
