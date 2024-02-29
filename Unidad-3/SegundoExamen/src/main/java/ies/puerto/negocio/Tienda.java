@@ -152,6 +152,7 @@ public class Tienda {
         return precioAlimentos()+precioAparatos()+precioCuidadoPersonal()+precioSouvenirs();
     }
 
+    /*
    public void cantidadDeAlimentos(){
        int count = 0;
        try {
@@ -169,6 +170,9 @@ public class Tienda {
 
    }
 
+     */
+
+    /*
    public void cantidadDeAparatos(){
 
 
@@ -188,7 +192,10 @@ public class Tienda {
 
        }
 
+     */
 
+
+    /*
     public void cantidadDeCuidadoPersonal(){
 
 
@@ -206,7 +213,10 @@ public class Tienda {
             }
         }
 
+     */
 
+
+    /*
     public void cantidadDeSouvenirs(){
 
 
@@ -224,6 +234,8 @@ public class Tienda {
             }
 
         }
+
+     */
 
 
     public float gananciasAlimentos(){

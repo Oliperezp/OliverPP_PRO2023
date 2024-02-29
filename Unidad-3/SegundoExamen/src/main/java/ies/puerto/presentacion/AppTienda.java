@@ -23,24 +23,18 @@ public class AppTienda {
         tienda.obtenerProductos();
 
 
-
-
-    public static void productosRecomendados(){
-           tienda.obtenerProductosPopulares();
-              }
-
-
-
-    public static void mostrarTotalProductos(){
-        System.out.println("Precio total Productos: " +tienda.precioTotalProductos());
     }
 
-    public static void mostrarTotalGanancias(){
+    public static void productosRecomendados() {
+        tienda.obtenerProductosPopulares();
+    }
+
+
+    public static void mostrarTotalProductos() {
+        System.out.println("Precio total Productos: " + tienda.precioTotalProductos());
+    }
+
+    public static void mostrarTotalGanancias() {
         System.out.println("Ganacia total de la tienda:" + tienda.ganaciaTotalTienda());
     }
-
-
-
-
-
 }
