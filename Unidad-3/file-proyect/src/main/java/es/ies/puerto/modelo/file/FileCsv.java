@@ -1,7 +1,9 @@
 package es.ies.puerto.modelo.file;
 
 import es.ies.puerto.modelo.Persona;
+import es.ies.puerto.modelo.interfaces.ICrudOperaciones;
 import es.ies.puerto.utilidades.UtilidadesClass;
+import org.simpleframework.xml.Element;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -10,8 +12,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FileCsv extends UtilidadesClass {
+public class FileCsv extends UtilidadesClass implements ICrudOperaciones {
 
+@Element(name="Personas")
 
 
     String path="src/main/resources/data.csv";
@@ -102,6 +105,17 @@ public class FileCsv extends UtilidadesClass {
 
 
     }
+
+    @Override
+    public void deletePersona(Persona persona) {
+
+    }
+
+    @Override
+    public void updatePersona(Persona persona) {
+
+    }
+
 
 
 

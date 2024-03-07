@@ -56,17 +56,6 @@ public abstract class FicheroAbstract {
                 }
             }
 
-            writer.close();
-            reader.close();
-
-            if (fichero.delete()) {
-                if (!nuevoFichero.renameTo(fichero)) {
-                    System.out.println("Error al renombrar el archivo temporal.");
-                }
-            } else {
-                System.out.println("Error al eliminar el archivo");
-            }
-
         } catch (IOException e) {
             System.out.println("Archivo no encontrado" + e.getMessage());
         }
@@ -102,18 +91,6 @@ public abstract class FicheroAbstract {
                     }
 
                     writer.write(lineaActual + "\n");
-                }
-
-                writer.close();
-                reader.close();
-
-                if (inputFile.delete()) {
-
-                    if (!tempFile.renameTo(inputFile)) {
-                        System.out.println("Error al renombrar el archivo temporal.");
-                    }
-                } else {
-                    System.out.println("Error al eliminar el archivo original.");
                 }
 
             } catch (IOException e) {

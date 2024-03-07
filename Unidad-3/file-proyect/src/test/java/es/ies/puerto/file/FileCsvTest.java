@@ -5,7 +5,9 @@ import es.ies.puerto.modelo.file.FileCsv;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.simpleframework.xml.core.Persister;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +15,6 @@ public class FileCsvTest {
 
     FileCsv fileCsv;
     List<Persona> personas;
-
     Persona persona;
 
 
@@ -59,5 +60,7 @@ public class FileCsvTest {
 
 
     }
+
+
 
 }
