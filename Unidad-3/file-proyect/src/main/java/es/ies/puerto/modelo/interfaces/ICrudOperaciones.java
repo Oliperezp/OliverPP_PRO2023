@@ -10,6 +10,4 @@ public interface ICrudOperaciones {
     public void addPersona(Persona persona);
     public void deletePersona(Persona persona);
     public void updatePersona(Persona persona);
-
-
 }

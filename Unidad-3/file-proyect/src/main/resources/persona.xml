@@ -1,6 +1,6 @@
-<row>
+<persona>
    <id>1</id>
-   <nombre>Paco</nombre>
+   <nombre>nombre</nombre>
    <edad>12</edad>
-   <email>test@test.com</email>
-</row>
+   <correo>test@tet.com</correo>
+</persona>
