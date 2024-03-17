@@ -1,0 +1,24 @@
+
+i
+java:S1192"GDefine a constant instead of duplicating this literal "Planta" 5 times.(›ïÜÃÿÿÿÿÿ8º•Ðšä1
+g
+java:S1192"JDefine a constant instead of duplicating this literal "Electrico" 5 times.(ß³Æ8º•Ðšä1
+h
+java:S1192"FDefine a constant instead of duplicating this literal "Fuego" 5 times.(‹÷¥™øÿÿÿÿ8º•Ðšä1
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ð»©þÿÿÿÿÿ8À•Ðšä1
+F	java:S106"+Replace this use of System.out by a logger.(ø³³r8Ã•Ðšä1
+>	java:S131-""Add a default case to this switch.(¥«ªÆ8Ä•Ðšä1
+P
+java:S1172="3Remove this unused method parameter "tipoAtacante".(ó»ÂÆ8Å•Ðšä1
+>	java:S131B""Add a default case to this switch.(¥«ªÆ8Æ•Ðšä1
+U
+java:S1172R"3Remove this unused method parameter "tipoAtacante".(ðàÈšüÿÿÿÿ8Æ•Ðšä1
+>	java:S131W""Add a default case to this switch.(¥«ªÆ8Ç•Ðšä1
+P
+java:S1172e"3Remove this unused method parameter "tipoAtacante".(›Ó‚¼8Ç•Ðšä1
+>	java:S131j""Add a default case to this switch.(¥«ªÆ8È•Ðšä1
+P
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8É•Ðšä1
+L
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òþÿÿÿÿ8É•Ðšä1
