@@ -18,69 +18,38 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileJson extends FicherosAbstractas implements ICrudOperaciones {
-    List<Personaje> personajes;
-    String path="src/main/resources/personajes.json";
     @Override
-    public List<Personaje> obtenerPersonajes() {
-        existeFichero(path);
+    public List<Personaje> leer() {
+        List<Personaje> personajes = new ArrayList<>();
         try {
-            String json = new String(Files.readAllBytes(Paths.get(path)));
+            String json = new String(Files.readAllBytes(Paths.get(RUTA_JSON)));
             Type listType = new TypeToken<ArrayList<Personaje>>(){}.getType();
-            personajes =  new Gson().fromJson(json, listType);
-
-        } catch (IOException exception) {
-            throw new RuntimeException(exception.getMessage());
+            personajes = new Gson().fromJson(json, listType);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         return personajes;
+
     }
 
     @Override
-    public Personaje obtenerPersonaje(Personaje personaje) {
-        existeFichero(path);
-        int posicion =  personajes.indexOf(personaje);
-        if (posicion > 0 ) {
-            return personajes.get(posicion);
-        }
-        return null;
+    public boolean actualizar(List<Personaje> personas) {
+        return escribir(personas);
     }
 
     @Override
-    public void addPersonaje(Personaje personaje) {
-        existeFichero(path);
-        if (personajes.contains(personaje)) {
-            return;
-        }
-        personajes.add(personaje);
-        guardarDatos(personajes);
-    }
-
-    @Override
-    public void deletePersonaje(Personaje personaje) {
-        existeFichero(path);
-        if (!personajes.contains(personaje)) {
-            return;
-        }
-        personajes.remove(personaje);
-        guardarDatos(personajes);
-    }
-
-    @Override
-    public void updatePersonaje(Personaje persona) {
-        existeFichero(path);
-        if (!personajes.contains(persona)) {
-            return;
-        }
-        int posicion = personajes.indexOf(persona);
-        personajes.set(posicion,persona);
-        guardarDatos(personajes);
-    }
-
-    private  void guardarDatos(List<Personaje> personajes) {
-        existeFichero(path);
-        try (FileWriter writer = new FileWriter(path)) {
-            new GsonBuilder().setPrettyPrinting().create().toJson(personajes, writer);
+    public boolean escribir(List<Personaje> personas) {
+        try (FileWriter writer = new FileWriter(RUTA_JSON)) {
+            new GsonBuilder().setPrettyPrinting().create().toJson(personas, writer);
+            return true;
         } catch (IOException e) {
-            System.err.println("Error al guardar datos: " + e.getMessage());
+            e.printStackTrace();
         }
+        return false;
+    }
+
+    @Override
+    public boolean modificar(List<Personaje> personas) {
+        return escribir(personas);
     }
 }

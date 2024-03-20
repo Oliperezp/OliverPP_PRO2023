@@ -2,88 +2,57 @@ package es.ies.puerto.modelo.file;
 
 import es.ies.puerto.modelo.Personaje;
 import es.ies.puerto.modelo.interfaces.ICrudOperaciones;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FileXmlTest {
 
-    String nombreInsertar = "Cat-Woman";
-    String aliasInsertar = "Selina-Kyle";
-    String generoInsertar = "Femenino";
-   List<String> poderes;
+    private static final String NOMBRE = "Nombre";
+    private static final String ALIAS = "Alias";
+    private static final String GENERO = "Genero";
 
-
-    ICrudOperaciones persistencia;
+    FileXml xml;
     List<Personaje> personajes;
+    Personaje personajeEscribir;
+    List<Personaje> personajesEscribir;
 
     @BeforeEach
     public void beforeEach() {
-        persistencia = new FileXml();
-        personajes = persistencia.obtenerPersonajes();
+        xml = new FileXml();
+        personajes = xml.leer();
+        List<String> poderes = new ArrayList<>();
+        poderes.add("poder1");
+        poderes.add("poder2");
+        poderes.add("poder3");
+        personajeEscribir = new Personaje(NOMBRE, ALIAS, GENERO, poderes);
+        personajesEscribir = new ArrayList<>();
+        personajesEscribir.add(personajeEscribir);
+        xml.escribir(personajesEscribir);
+    }
+
+    @AfterEach
+    public void afterEach() {
+        xml.escribir(personajes);
     }
 
     @Test
-    public void obtenerPersonajesTest() {
-        Assertions.assertFalse(personajes.isEmpty(),
-                "No se ha obtenido el valor esperado");
-    }
-
-
-    @Test
-    public void obtenerPersonajeTest() {
-        Personaje personajeBuscar = new Personaje("Spider-Man");
-        personajeBuscar = persistencia.obtenerPersonaje(personajeBuscar);
-        Assertions.assertEquals(personajeBuscar.getNombre(),"Spider-Man",
-                "No se ha obtenido el valor esperado");
-        Assertions.assertNotNull(personajeBuscar.getNombre(),
-                "No se ha obtenido el valor esperado");
-        Assertions.assertNotNull(personajeBuscar.getGenero(),
-                "No se ha obtenido el valor esperado");
-        Assertions.assertNotNull(personajeBuscar.getAlias(),
-                "No se ha obtenido el valor esperado");
+    public void XmlNotNullTest() {
+        Assertions.assertNotNull(xml);
     }
 
     @Test
-    public void addDeletePersonajeTest() {
-
-        int numPersonasInicial = personajes.size();
-        Personaje personajeInsertar = new Personaje(nombreInsertar,
-                aliasInsertar,generoInsertar,poderes);
-        persistencia.addPersonaje(personajeInsertar);
-        personajes = persistencia.obtenerPersonajes();
-        int numPersonajesInsertar = personajes.size();
-        Assertions.assertTrue(personajes.contains(personajeInsertar),
-                "No se ha encontrado al personaje");
-        Assertions.assertEquals(numPersonasInicial +1 ,numPersonajesInsertar,
-                "No se ha obtenido el numero esperado");
-        persistencia.deletePersonaje(personajeInsertar);
-        personajes = persistencia.obtenerPersonajes();
-        int numPersonasBorrado = personajes.size();
-        Assertions.assertEquals(numPersonasInicial ,
-                numPersonasBorrado,
-                "No se ha obtenido el numero esperado");
+    public void XmlLeerEscribirTest() {
+        Assertions.assertEquals(personajesEscribir, xml.leer());
     }
 
     @Test
-    public void actualizarPersonaje() {
-        String nombreActualizar = "Iron-Man";
-        Personaje personajeBuscar = new Personaje(nombreActualizar);
-        Personaje personajeActualizar = persistencia.obtenerPersonaje(personajeBuscar);
-        Personaje personaBackup = persistencia.obtenerPersonaje(personajeBuscar);
-        personajeActualizar.setAlias(aliasInsertar);
-        personajeActualizar.setGenero(generoInsertar);
-        personajeActualizar.setPoderes(poderes);
-        persistencia.updatePersonaje(personajeActualizar);
-
-        personajeBuscar = persistencia.obtenerPersonaje(personajeBuscar);
-        Assertions.assertEquals(personajeBuscar.toString(), personajeActualizar.toString(),
-                "Los datos actualizados no son los esperados");
-        persistencia.updatePersonaje(personaBackup);
-
-
-
+    public void XmlModificarTest() {
+        xml.modificar(personajes);
+        Assertions.assertEquals(personajes, xml.leer());
     }
 }

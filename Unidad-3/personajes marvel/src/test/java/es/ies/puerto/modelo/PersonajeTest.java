@@ -6,91 +6,48 @@ import org.junit.jupiter.api.Test;
 import org.simpleframework.xml.core.Persister;
 
 import java.io.File;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 public class PersonajeTest {
 
-    String nombre = "Cat-Woman";
-    String alias = "Selina-Kyle";
-    String genero = "Femenino";
-    List<String> poderes ;
-
+    private static final String PODERES = "poder1,poder2,poder3";
+    private static final String GENERO = "genero";
+    private static final String ALIAS = "alias";
+    private static final String NOMBRE = "nombre";
     Personaje personaje;
-
     @BeforeEach
-    public void beforeEach() {
-
-        poderes.add("Arañazos");
-        poderes.add("Agilidad");
-        personaje = new Personaje(nombre, alias, genero,poderes);
+    public void beforeEach(){
+        personaje = new Personaje(NOMBRE, ALIAS, GENERO, Arrays.asList(PODERES.split(personaje.DELIMITADOR)));
     }
-
     @Test
-    public void createPersonaTest() {
-
-        Assertions.assertNotNull(personaje, "El objeto no puede ser nulo");
+    public void personaNotNull(){
+        Assertions.assertNotNull(personaje);
     }
-
     @Test
-    public void toStringPersonajeTest() {
-        Assertions.assertTrue(personaje.toString().contains(String.valueOf(nombre)),
-                "El resultado no es el esperado");
-        Assertions.assertTrue(personaje.toString().contains(alias),
-                "El resultado no es el esperado");
-        Assertions.assertTrue(personaje.toString().contains(String.valueOf(genero)),
-                "El resultado no es el esperado");
-
+    public void personaToCsv(){
+        String resultadoOk=NOMBRE+personaje.DELIMITADOR+ALIAS+personaje.DELIMITADOR+GENERO+personaje.DELIMITADOR+PODERES;
+        Assertions.assertEquals(resultadoOk, personaje.toCsv());
     }
-
-
     @Test
-    public void toCsvPersonaTest() {
-        Assertions.assertTrue(personaje.toCsv().contains(String.valueOf(nombre)),
-                "El resultado no es el esperado");
-        Assertions.assertTrue(personaje.toCsv().contains(alias),
-                "El resultado no es el esperado");
-        Assertions.assertTrue(personaje.toCsv().contains(String.valueOf(genero)),
-                "El resultado no es el esperado");
-        Assertions.assertTrue(personaje.toCsv().contains(personaje.DELIMITADOR),
-                "El resultado no es el esperado");
+    public void getSetTest(){
+        List<String> poderesUpdate = Arrays.asList("Poder4,Poder5,Poder6");
+        String generoUpdate = "generoUpdate";
+        String aliasUpdate = "aliasUpdate";
+        String nombreUpdate = "nombreUpdate";
+        personaje.setPoderes(poderesUpdate);
+        personaje.setGenero(generoUpdate);
+        personaje.setAlias(aliasUpdate);
+        personaje.setNombre(nombreUpdate);
+        Assertions.assertEquals(personaje.getPoderes(), poderesUpdate);
+        Assertions.assertEquals(personaje.getGenero(), generoUpdate);
+        Assertions.assertEquals(personaje.getAlias(), aliasUpdate);
+        Assertions.assertEquals(personaje.getNombre(), nombreUpdate);
     }
-
     @Test
-    public void equalsPersonajeTest() {
-        Personaje personaBuscar = new Personaje(nombre);
-        Assertions.assertEquals(personaBuscar, personaje,
-                "las personas deben de ser iguales");
-    }
-
-    @Test
-    public void personajeToXml() {
-        Persister serializer = new Persister();
-        try {
-            serializer.write(personaje, new File("src/main/resources/personajes.xml"));
-        } catch (Exception e) {
-            Assertions.fail(e.getMessage());
-        }
-    }
-
-
-    @Test
-    public void xmlToPersonajeTest() {
-        Persister serializer = new Persister();
-        try {
-            File file = new File("src/main/resources/personajes.xml");
-            Personaje persona = serializer.read(Personaje.class, file);
-            Assertions.assertEquals(nombre, personaje.getNombre(),
-                    "No se ha obtenido el valor esperado");
-            Assertions.assertEquals(alias, personaje.getAlias(),
-                    "No se ha obtenido el valor esperado");
-            Assertions.assertEquals(genero, persona.getGenero(),
-                    "No se ha obtenido el valor esperado");
-            Assertions.assertEquals(poderes, persona.getPoderes(),
-                    "No se ha obtenido el valor esperado");
-
-        } catch (Exception e) {
-            Assertions.fail(e.getMessage());
-        }
+    public void hashCodeTest(){
+        Assertions.assertEquals(Objects.hash(ALIAS), personaje.hashCode());
     }
 
 
