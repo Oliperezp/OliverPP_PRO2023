@@ -11,18 +11,21 @@ public class PersonajeList {
     @ElementList(inline = true)
     private List<Personaje> personajes;
 
-    public List<Personaje> getPersonajes() {
-        return this.personajes;
-    }
-
-    public void setPersonajes(List<Personaje> personajes) {
-        this.personajes = personajes;
-    }
-
-    public PersonajeList(List<Personaje> personajes) {
-        this.personajes = personajes;
-    }
 
     public PersonajeList() {
+    }
+    public PersonajeList(List<Personaje> personajes) {
+
+        this.personajes = personajes;
+    }
+
+    public List<Personaje> getPersonajes() {
+
+        return personajes;
+    }
+
+    public void setPersonas(List<Personaje> personajes) {
+
+        this.personajes = personajes;
     }
 }
