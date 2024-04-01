@@ -39,7 +39,7 @@ public class PersonajeTest {
         personaje.setPoderes(poderesUpdate);
         personaje.setGenero(generoUpdate);
         personaje.setAlias(aliasUpdate);
-        personaje.setNombre(nombreUpdate);
+
         Assertions.assertEquals(personaje.getPoderes(), poderesUpdate);
         Assertions.assertEquals(personaje.getGenero(), generoUpdate);
         Assertions.assertEquals(personaje.getAlias(), aliasUpdate);

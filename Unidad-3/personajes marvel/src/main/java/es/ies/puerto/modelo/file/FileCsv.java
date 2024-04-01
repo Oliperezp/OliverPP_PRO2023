@@ -114,4 +114,33 @@ public class FileCsv extends UtilidadesClass implements ICrudOperaciones {
     }
 
 
+    @Override
+    public List<Personaje> leer() {
+        return null;
+    }
+
+    @Override
+    public boolean eliminar(String path) {
+        return false;
+    }
+
+    @Override
+    public boolean existe(String path) {
+        return false;
+    }
+
+    @Override
+    public boolean actualizar(List<Personaje> personas) {
+        return false;
+    }
+
+    @Override
+    public boolean escribir(List<Personaje> personas) {
+        return false;
+    }
+
+    @Override
+    public boolean modificar(List<Personaje> personas) {
+        return false;
+    }
 }
