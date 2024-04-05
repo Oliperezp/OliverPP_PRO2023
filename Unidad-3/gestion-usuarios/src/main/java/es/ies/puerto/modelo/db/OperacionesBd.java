@@ -94,13 +94,20 @@ public class OperacionesBd extends Conexion{
         actualizar(query);
     }
 
-    public void actualizarUsuario(Usuario usuario) {
+    public void actualizarUsuario(Usuario usuario) throws UsuarioException {
+
+        String query="update usuarios set nombre='"+usuario.getNombre()+"', ciudad='"+usuario.getCiudad()+"', " +
+                "edad="+usuario.getEdad()+" where id="+usuario.getId()+"";
+        actualizar(query);
 
     }
 
-    public void eliminarUsuario(Usuario usuario) {
+    public void eliminarUsuario(Usuario usuario) throws UsuarioException {
 
+        String query="delete from usuarios as u where u.id='"+usuario.getId()+"'";
+        actualizar(query);
     }
+
 
 
 }
