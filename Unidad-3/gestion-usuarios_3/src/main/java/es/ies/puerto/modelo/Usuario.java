@@ -1,11 +1,14 @@
 package es.ies.puerto.modelo;
 
-public class Usuario extends Personaje {
-    public Usuario(String id) {
-        super(id);
+import java.util.List;
+
+public class Usuario extends Personajes {
+
+    public Usuario(String nombre) {
+        super(nombre);
     }
 
-    public Usuario(String id, String nombre, int edad, String ciudad) {
-        super(id, nombre, edad, ciudad);
+    public Usuario(String nombre, String alias, String genero, List<String> poderes) {
+        super(nombre, alias, genero, poderes);
     }
 }

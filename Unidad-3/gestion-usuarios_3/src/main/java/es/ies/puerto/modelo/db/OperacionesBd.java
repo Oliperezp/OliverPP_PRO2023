@@ -37,7 +37,7 @@ public class OperacionesBd extends Conexion{
         }
     }
 
-    private Set<Usuario> obtener(String query) throws UsuarioException {
+    private Set<Usuario> obtenerPersonaje(String query) throws UsuarioException {
         Set<Usuario> lista = new HashSet<>();
         Statement statement = null;
         ResultSet rs = null;
@@ -45,11 +45,11 @@ public class OperacionesBd extends Conexion{
             statement = getConexion().createStatement();
             rs = statement.executeQuery(query);
             while (rs.next()) {
-                String userId = rs.getString("id");
-                String userName = rs.getString("nombre");
-                int userAge = rs.getInt("edad");
-                String userCity = rs.getString("ciudad");
-                Usuario usuario = new Usuario(userId, userName, userAge, userCity);
+                String userNombre = rs.getString("nombre");
+                String userAlias = rs.getString("alias");
+                String userGenero = rs.getString("genero");
+                List<String> userPoderes = rs.getString("ciudad");
+                Usuario usuario = new Usuario(userNombre, userAlias, userGenero, userPoderes);
                 lista.add(usuario);
             }
         } catch (SQLException exception) {
@@ -72,8 +72,8 @@ public class OperacionesBd extends Conexion{
         return lista;
     }
     public Set<Usuario> obtenerUsuarios() throws UsuarioException {
-        String query = "select u.id, u.nombre, u.edad, u.ciudad from usuarios as u";
-        return obtener(query);
+        String query = "select p.nombre, p.alias, p.genero, p.poderes from personajes as p";
+        return obtenerPersonaje(query);
     }
 
     public Usuario obtenerUsuario(Usuario usuario) throws UsuarioException {
@@ -87,10 +87,10 @@ public class OperacionesBd extends Conexion{
     }
 
     public void insertarUsuario(Usuario usuario) throws UsuarioException {
-        String query = "INSERT INTO usuarios as u (nombre, edad, ciudad)" +
+        String query = "INSERT INTO personajes as p (nombre, alias, genero)" +
                 " VALUES ('"+usuario.getNombre()+"',"
-                + usuario.getEdad()+"," +
-                " '"+usuario.getCiudad()+"')";
+                + usuario.getAlias()+"," +
+                " '"+usuario.getGenero()+"')";
         actualizar(query);
     }
 
