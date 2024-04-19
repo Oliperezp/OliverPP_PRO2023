@@ -7,7 +7,7 @@ public class Usuario extends Personaje {
         super(id);
     }
 
-    public Usuario(int id, String nombre, String alias, String genero) {
+    public Usuario(int id, String nombre,String genero) {
         super(id, nombre,genero);
     }
 }

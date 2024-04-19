@@ -1,5 +1,7 @@
 package es.ies.puerto.JDBC.modelo;
 
+import java.util.Objects;
+
 public class Alias {
 
 private String alias;
@@ -39,5 +41,27 @@ private int id;
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Alias alias = (Alias) o;
+        return id == alias.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    @Override
+    public String toString() {
+        return "Alias{" +
+                "alias='" + alias + '\'' +
+                ", personaje_id=" + personaje_id +
+                ", id=" + id +
+                '}';
     }
 }

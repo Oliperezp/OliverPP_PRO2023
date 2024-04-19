@@ -6,46 +6,37 @@ import java.util.Objects;
 public class Poderes {
 
     private int id;
-    private List<String> poderes;
+    private String poder;
 
-    public Poderes(int personaje_id) {
+    public Poderes(int id) {
         this.id = id;
     }
 
-    public Poderes(int personaje_id, List<String> poderes) {
+    public Poderes(int id, String poder) {
         this.id = id;
-        this.poderes = poderes;
+        this.poder = poder;
     }
 
     public int getId() {
         return id;
     }
 
-    public List<String> getPoderes() {
-        return poderes;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public void setPoderes(List<String> poderes) {
-        this.poderes = poderes;
+    public String getPoder() {
+        return poder;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Poderes poderes1 = (Poderes) o;
-        return id == poderes1.id && Objects.equals(poderes, poderes1.poderes);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id);
+    public void setPoder(String poder) {
+        this.poder = poder;
     }
 
     @Override
     public String toString() {
         return "Poderes{" +
-                "poderes=" + poderes +
+                "poder=" + poder +
                 '}';
     }
 }

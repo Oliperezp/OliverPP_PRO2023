@@ -5,7 +5,6 @@ import java.util.Objects;
 public abstract class Personaje {
     private int id;
     private String nombre;
-
     private String genero;
 
 
