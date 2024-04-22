@@ -1,25 +1,32 @@
-package es.ies.puerto.JDBC.modelo;
+package es.ies.puerto.JPA.modelo;
 
+import java.io.Serializable;
 import java.util.Objects;
+import java.util.Set;
+import javax.persistence.*;
 
 
-public abstract class Personaje {
+
+@Entity
+@Table(name="personaje")
+public  class Personaje implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+    @Column(name="nombre")
     private String nombre;
+    @Column(name="genero")
     private String genero;
 
 
-    public Personaje(int id) {
-        this.id = id;
-    }
+    @ManyToMany(mappedBy = "personajes")
+    private Set<Poderes> poderes;
 
-    public Personaje(int id, String nombre, String genero) {
-        this.id = id;
-        this.nombre = nombre;
-        this.genero = genero;
+    @ManyToOne
+    private Alias alias;
 
 
-    }
+   public Personaje(){}
 
     public int getId() {
         return id;
@@ -56,12 +63,5 @@ public abstract class Personaje {
         return Objects.hash(id);
     }
 
-    @Override
-    public String toString() {
-        return "Personaje{" +
-                "id=" + id +
-                ", nombre='" + nombre + '\'' +
-                ", genero='" + genero;
-    }
 
 }
