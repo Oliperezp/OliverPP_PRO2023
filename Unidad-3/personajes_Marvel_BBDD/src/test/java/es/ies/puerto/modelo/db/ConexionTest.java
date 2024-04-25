@@ -1,6 +1,6 @@
 package es.ies.puerto.modelo.db;
 
-import es.ies.puerto.JDBC.modelo.db.Conexion;
+import es.ies.puerto.jdbc.modelo.db.Conexion;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
